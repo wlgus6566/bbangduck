@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="No sugar No gruten, Ketojenic Bakery" />
+    <meta name="author" content="Ji hyeon" />
+    <title>RESERVATION - BBANGDUCK's Bakery</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../assets/img/pickicon.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/sub.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/86f00f2bf6.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- slick slide -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="../assets/js/common.js" defer></script>
+    <script src="../assets/js/sub.js" defer></script>
+  </head>
+</html>
+<body>
+  <div id="skip_menu">
+    <a href="#sub_container">본문 바로가기</a>
+  </div>
+  <header>
+    <!-- 최상단 배너 -->
+    <div class="topline">
+      <a href="#">
+        신규가입시 적립금 1000원, 30000원이상 구매 시 무료 배송 >
+      </a>
+      <div class="container">
+        <a href="#" class="btn_close icon">레이어 닫기</a>
+      </div>
+    </div>
+    <div class="container">
+      <!-- 사이드바 -->
+      <div class="side-menu">
+        <input type="checkbox" id="hamburger" />
+        <label for="hamburger" class="ir_pm hamburgerLabel">
+          햄버거버튼
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="sidebar clear">
+          <div class="sidebar_user">
+            <button onclick="location.href='login.html'">로그인</button
+            ><button onclick="location.href='join-agree.html'">회원가입</button>
+          </div>
+          <ul class="mobile_menu_list">
+            <li>
+              <a href="brandstory.html"><span></span>빵덕이네 이야기</a>
+            </li>
+            <li class="hasTwoDepth">
+              <a href="#"><span></span>메뉴</a>
+              <ul class="two_depth">
+                <li><a href="menu-bread.html">빵</a></li>
+                <li><a href="menu-cookie.html">쿠키</a></li>
+                <li><a href="menu-cake.html">케이크</a></li>
+              </ul>
+            </li>
+            <li class="hasTwoDepth">
+              <a href="#"><span></span>이벤트</a>
+              <ul class="two_depth">
+                <li><a href="event.html">진행중 이벤트</a></li>
+                <li><a href="event-end.html">마감된 이벤트</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="recommend.html"><span></span>맞춤추천</a>
+            </li>
+            <li>
+              <a href="#"><span></span>케이크 예약</a>
+              <ul class="two_depth">
+                <li>
+                  <a href="cake-reservation.html">케이크 예약안내</a>
+                </li>
+                <li><a href="cake-form.html">예약폼 작성</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="review.html"><span></span>구매후기</a>
+            </li>
+            <li class="hasTwoDepth">
+              <a href="#"><span></span>고객센터</a>
+              <ul class="two_depth">
+                <li>
+                  <a href="faq.html">자주묻는질문</a>
+                </li>
+                <li>
+                  <a href="customer_center.html">고객의 소리</a>
+                </li>
+                <li>
+                  <a href="board.html">공지사항</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="sidebar_footer">
+            <span class="sidebar_footer_logo"></span>
+            <div class="sidebar_footer_desc">
+              <div class="phone">
+                <h3>문의전화</h3>
+                <div class="phone_number">070-0594-6566</div>
+              </div>
+              <div class="bank">
+                <h3>BANK INFO</h3>
+                <div class="txt">우리은행 | 1002-450-904652</div>
+                <div class="txt">예금주<span>| 주식회사빵덕이네</span></div>
+              </div>
+              <div class="about">
+                <h3>ABOUT US</h3>
+                <div class="txt">㈜ 빵덕</div>
+                <div class="txt">대표 : 김지현</div>
+                <div class="txt">E-mail : wlgus6566@naver.com</div>
+                <div class="txt">
+                  주소: 서울시 동작구 동작대로 29바길 10 빵덕이네
+                </div>
+              </div>
+            </div>
+          </div>
+          <label for="hamburger"></label>
+        </div>
+        <!-- 사이드바 외 영역 -->
+        <label for="hamburger" class="background"></label>
+      </div>
+      <!-- 네비게이션 바 -->
+      <nav>
+        <h1>
+          <a href="../index.html" class="logo ir_pm">빵덕로고</a>
+        </h1>
+        <ul class="nav_left">
+          <li>
+            <a href="login.html" class="login ir_pm">로그인 아이콘</a>
+          </li>
+          <li class="two_depth">
+            <a href="brandstory.html">빵덕이네 이야기</a>
+            <ul>
+              <li><a href="brandstory.html">브랜드스토리</a></li>
+            </ul>
+          </li>
+          <li class="two_depth">
+            <a href="menu-bread.html">메뉴</a>
+            <ul>
+              <li><a href="menu-bread.html">빵</a></li>
+              <li><a href="menu-cookie.html">쿠키</a></li>
+              <li><a href="menu-cake.html">케이크</a></li>
+            </ul>
+          </li>
+          <li class="two_depth">
+            <a href="event.html">이벤트</a>
+            <ul>
+              <li><a href="event.html">진행중 이벤트</a></li>
+              <li><a href="event-end.html">마감된 이벤트</a></li>
+            </ul>
+          </li>
+          <li class="two_depth">
+            <a href="recommend.html">맞춤추천</a>
+            <ul>
+              <li><a href="recommend.html">맞춤추천</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav_right">
+          <li class="two_depth">
+            <a href="cake-reservation.html">케이크 예약</a>
+            <ul>
+              <li><a href="cake-reservation.html">에약안내</a></li>
+              <li><a href="cake-form.html">예약하기</a></li>
+            </ul>
+          </li>
+          <li class="two_depth">
+            <a href="review.html">구매후기</a>
+            <ul>
+              <li><a href="review.html">구매후기</a></li>
+            </ul>
+          </li>
+          <li class="two_depth">
+            <a href="board.html">고객센터</a>
+            <ul>
+              <li><a href="faq.html">자주묻는질문</a></li>
+              <li><a href="customer_center.html">고객의 소리</a></li>
+              <li><a href="board.html">공지사항</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="cart.html" class="shopping" data-cart="4">장바구니</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-----x---header----->
+  <a href="#" class="gototop">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+  <!-- gototop버튼 -->
+  <div id="sub_container" class="review_container">
+    <div class="review_top">
+      <h2 class="hide">리뷰</h2>
+      <div class="review_top_bg"></div>
+      <ul class="reveiw_event">
+        <li>
+          <div class="review_icon">
+            <img src="../story/subimg/review_event(1).png" alt="텍스트리뷰" />
+          </div>
+          <p>텍스트 리뷰</p>
+          <span>20자 이상 작성</span>
+          <em>100원</em>
+        </li>
+        <li>
+          <div class="review_icon">
+            <img src="../story/subimg/review_event(2).png" alt="포토리뷰" />
+          </div>
+          <p>포토 리뷰</p>
+          <span>20자 이상 작성 + 포토</span>
+          <em>500원</em>
+        </li>
+        <li>
+          <div class="review_icon">
+            <img src="../story/subimg/review_event(3).png" alt="베스트리뷰" />
+          </div>
+          <p>베스트 리뷰</p>
+          <span>포토 리뷰 중 선정</span>
+          <em>1000원</em>
+        </li>
+        <li>
+          <div class="review_icon">
+            <img
+              src="../story/subimg/review_event(4).png"
+              alt="주간 베스트 리뷰"
+            />
+          </div>
+          <p>주간 베스트 리뷰</p>
+          <span>베스트 리뷰 중 선정</span>
+          <em>2000원</em>
+        </li>
+      </ul>
+      <p class="review_notice">
+        ※ 상품과 관련없는 내용 또는 욕설 및 비방글은 관리자에 의해 삭제되며
+        적립금이 회수됩니다.
+      </p>
+    </div>
+    <div class="review_inner">
+      <div id="detail3">
+        <ul class="detail_tap">
+          <li>
+            <a href="#detail1" class="tap1 active">
+              전체
+              <img src="../story/subimg/datail_tab_arrow.png" alt="탭이미지" />
+            </a>
+          </li>
+          <li>
+            <a href="#detail2" class="tap2">
+              베스트리뷰
+              <img src="../story/subimg/datail_tab_arrow.png" alt="탭이미지" />
+            </a>
+          </li>
+          <li>
+            <a href="#detail3" class="tap3">
+              포토리뷰
+              <img src="../story/subimg/datail_tab_arrow.png" alt="탭이미지" />
+            </a>
+          </li>
+          <li>
+            <a href="#detail4" class="tap4">
+              일반리뷰
+              <img src="../story/subimg/datail_tab_arrow.png" alt="탭이미지" />
+            </a>
+          </li>
+        </ul>
+        <div class="review">
+          <ul class="pho_re">
+            <li class="p b">
+              <div class="top clear">
+                <div class="review_star">
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                </div>
+                <span class="name">인*선</span>
+              </div>
+              <div class="txt">
+                <div class="msg">
+                  <div class="msg_tit">얌핑거 세트</div>
+                  <p>
+                    얌핑거 이번에 처음 주문했는데 맛있어요~ 빵덕이네 특유의
+                    쫀득한 식감이 넘 좋아용<br />
+                    에어프라이어에 돌리니까 완전 겉바속촉..<br />
+                    확실히 밀가루를 쓰지 않아서 속도 편하고 최고입니당..
+                  </p>
+                </div>
+                <div class="pic">
+                  <img src="../story/subimg/review_img.JPG" alt="리뷰이미지" />
+                </div>
+              </div>
+            </li>
+            <li class="p">
+              <div class="top clear">
+                <div class="review_star">
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                </div>
+                <span class="name">홍*민</span>
+              </div>
+              <div class="txt">
+                <div class="msg">
+                  <div class="msg_tit">얌핑거 세트</div>
+                  <p>
+                    얌핑거 이번에 처음 주문했는데 맛있어요~ 빵덕이네 특유의
+                    쫀득한 식감이 넘 좋아용<br />
+                    에어프라이어에 돌리니까 완전 겉바속촉..<br />
+                    확실히 밀가루를 쓰지 않아서 속도 편하고 최고입니당..
+                  </p>
+                </div>
+                <div class="pic">
+                  <img
+                    src="../story/subimg/review_img(1).JPG"
+                    alt="리뷰이미지"
+                  />
+                </div>
+              </div>
+            </li>
+            <li class="n">
+              <div class="top clear">
+                <div class="review_star">
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star2.png" alt="별점" />
+                  <img src="../story/subimg/review_star2.png" alt="별점" />
+                </div>
+                <span class="name">김*별</span>
+              </div>
+              <div class="txt">
+                <div class="msg">
+                  <div class="msg_tit">당근머핀 세트</div>
+                  <p>
+                    자극적이지 않고 완전 편한맛 얌핑거! 먹고 싶어 주문했는데
+                    역시나 기대를 저버리지 않았어요! 너무 맛있었어요~<br />
+                    특히 당근이 오독오독 씹히는 맛이 군것질 생각날 때 하나씩
+                    먹으면<br />
+                    군것질 욕구 충분히 만족시키고 좋아요~
+                  </p>
+                </div>
+                <div class="pic">
+                  <img
+                    src="../story/subimg/review_img(2).JPG"
+                    alt="리뷰이미지"
+                  />
+                </div>
+              </div>
+            </li>
+            <li class="p">
+              <div class="top clear">
+                <div class="review_star">
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star2.png" alt="별점빈거" />
+                </div>
+                <span class="name">이*민</span>
+              </div>
+              <div class="txt">
+                <div class="msg">
+                  <div class="msg_tit">피자빵</div>
+                  <p>
+                    배송 진짜 빨라서 좋아요! 포슬포슬 피자향 솔솔솔,, 모든 것이
+                    좋아요. <br />
+                    이번이 4번째 구매고 앞으로도 구매할게요~
+                  </p>
+                </div>
+                <div class="pic">
+                  <img
+                    src="../story/subimg/review_img(3).JPG"
+                    alt="리뷰이미지"
+                  />
+                </div>
+              </div>
+            </li>
+            <li class="p b">
+              <div class="top clear">
+                <div class="review_star">
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                </div>
+                <span class="name">인*선</span>
+              </div>
+              <div class="txt">
+                <div class="msg">
+                  <div class="msg_tit">얌핑거 세트</div>
+                  <p>
+                    얌핑거 이번에 처음 주문했는데 맛있어요~ 빵덕이네 특유의
+                    쫀득한 식감이 넘 좋아용<br />
+                    에어프라이어에 돌리니까 완전 겉바속촉..<br />
+                    확실히 밀가루를 쓰지 않아서 속도 편하고 최고입니당..
+                  </p>
+                </div>
+                <div class="pic">
+                  <img
+                    src="../story/subimg/review_img(4).JPG"
+                    alt="리뷰이미지"
+                  />
+                </div>
+              </div>
+            </li>
+            <li class="n">
+              <div class="top clear">
+                <div class="review_star">
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star2.png" alt="별점" />
+                  <img src="../story/subimg/review_star2.png" alt="별점" />
+                </div>
+                <span class="name">김*별</span>
+              </div>
+              <div class="txt">
+                <div class="msg">
+                  <div class="msg_tit">빵덕이네 best5 세트</div>
+                  <p>
+                    골고루 맛보려고 올인원 주문했어요~ 생각보다 더
+                    맛있네요ㅋㅋㅋㅋ<br />
+                    포장도 잘 되어왔구 하나씩 가지고다니기 너무 좋아여!!! <br />
+                    군것질 욕구 충분히 만족시키고 좋아요~
+                  </p>
+                </div>
+                <div class="pic">
+                  <img
+                    src="../story/subimg/review_img(5).JPG"
+                    alt="리뷰이미지"
+                  />
+                </div>
+              </div>
+            </li>
+            <li class="p">
+              <div class="top clear">
+                <div class="review_star">
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star2.png" alt="별점빈거" />
+                </div>
+                <span class="name">이*민</span>
+              </div>
+              <div class="txt">
+                <div class="msg">
+                  <div class="msg_tit">피자빵</div>
+                  <p>
+                    배송 진짜 빨라서 좋아요! 포슬포슬 피자향 솔솔솔,, 모든 것이
+                    좋아요. <br />
+                    이번이 4번째 구매고 앞으로도 구매할게요~
+                  </p>
+                </div>
+                <div class="pic">
+                  <img
+                    src="../story/subimg/review_img(6).JPG"
+                    alt="리뷰이미지"
+                  />
+                </div>
+              </div>
+            </li>
+            <li class="n">
+              <div class="top clear">
+                <div class="review_star">
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star2.png" alt="별점빈거" />
+                </div>
+                <span class="name">이*민</span>
+              </div>
+              <div class="txt">
+                <div class="msg">
+                  <div class="msg_tit">초코빵</div>
+                  <p>
+                    큰일났네요TT 이렇게 맛있을 수 있는건가요? 밀가루를 먹으면
+                    두통이 와서 좋아해도 마음껏 못 먹었었는데 맘카페에서 보고
+                    혹시나하고 주문했는데 밀가루 먹고 나타나는 증상 없이 아주
+                    편안했어요~^^ 월경통 때문에 이틀 편두통때문에 끙끙 거리고
+                    있었는데 달달한 빵 먹고 나니 두통이
+                    없어졌어요~!!만병통치약도 아니고 저도 안 믿겨요TT 이거
+                    중독될 각인데 가격이 좀 부담되긴 해서 신랑 눈치가 보일거
+                    같으네요~ 그래서 적립금이라도 보탬이 될까해서 이렇게 쓰고
+                    있답니다~^^
+                  </p>
+                </div>
+                <div class="pic">
+                  <img
+                    src="../story/subimg/review_img(7).JPG"
+                    alt="리뷰이미지"
+                  />
+                </div>
+              </div>
+            </li>
+            <li class="p b">
+              <div class="top clear">
+                <div class="review_star">
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star2.png" alt="별점빈거" />
+                </div>
+                <span class="name">이*민</span>
+              </div>
+              <div class="txt">
+                <div class="msg">
+                  <div class="msg_tit">피자빵</div>
+                  <p>
+                    미소링 넘 맛있는거 아닌가요 ㅠㅠㅠ?? 칼로리높아서 찹싸루니만
+                    사먹다가 남친 사주는김에 먹어보라고 사줬는데 넘 맛있어요
+                    ㅠㅠㅠ
+                  </p>
+                </div>
+                <div class="pic">
+                  <img
+                    src="../story/subimg/review_img(8).JPG"
+                    alt="리뷰이미지"
+                  />
+                </div>
+              </div>
+            </li>
+            <li class="p b">
+              <div class="top clear">
+                <div class="review_star">
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star2.png" alt="별점빈거" />
+                </div>
+                <span class="name">이*민</span>
+              </div>
+              <div class="txt">
+                <div class="msg">
+                  <div class="msg_tit">피자빵</div>
+                  <p>진정 건강한 브라우니, 이만한건 어디에도 없음!</p>
+                </div>
+                <div class="pic">
+                  <img
+                    src="../story/subimg/review_img(9).JPG"
+                    alt="리뷰이미지"
+                  />
+                </div>
+              </div>
+            </li>
+            <li class="p">
+              <div class="top clear">
+                <div class="review_star">
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star2.png" alt="별점빈거" />
+                </div>
+                <span class="name">이*민</span>
+              </div>
+              <div class="txt">
+                <div class="msg">
+                  <div class="msg_tit">찹쌀루니</div>
+                  <p>너무쫀득하고 맛있어염 굳잡 ㅠㅠㅠㅠㅠㅠㅠㅠㅠ 또시켰덩</p>
+                </div>
+                <div class="pic">
+                  <img
+                    src="../story/subimg/review_img(10).JPG"
+                    alt="리뷰이미지"
+                  />
+                </div>
+              </div>
+            </li>
+            <li class="n">
+              <div class="top clear">
+                <div class="review_star">
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star2.png" alt="별점빈거" />
+                </div>
+                <span class="name">이*민</span>
+              </div>
+              <div class="txt">
+                <div class="msg">
+                  <div class="msg_tit">카스테라</div>
+                  <p>
+                    많이 사면 덤으로 몇개 더 준다는게 좋네요. 정기적으로 먹고
+                    있어서 이런게 좋아요.
+                  </p>
+                </div>
+                <div class="pic">
+                  <img
+                    src="../story/subimg/review_img(11).JPG"
+                    alt="리뷰이미지"
+                  />
+                </div>
+              </div>
+            </li>
+            <li class="p b">
+              <div class="top clear">
+                <div class="review_star">
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star1.png" alt="별점" />
+                  <img src="../story/subimg/review_star2.png" alt="별점빈거" />
+                </div>
+                <span class="name">이*민</span>
+              </div>
+              <div class="txt">
+                <div class="msg">
+                  <div class="msg_tit">찹싸루니</div>
+                  <p>
+                    정말..말해뭐해 입니다.. <br />
+                    맛있는데 건강할수있는건 정말 드문데.. 그게바로
+                    찹싸루니입니다..
+                  </p>
+                </div>
+                <div class="pic">
+                  <img
+                    src="../story/subimg/review_img(12).JPG"
+                    alt="리뷰이미지"
+                  />
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--x--review_container---->
+  <div class="paging">
+    <ul>
+      <li>
+        <a href="#" class="first"
+          ><span class="ir_pm">첫페이지</span><i class="fas fa-chevron-left"></i
+        ></a>
+      </li>
+      <li>
+        <a href="#"
+          ><span class="ir_pm">이전페이지</span
+          ><i class="fas fa-chevron-left"></i
+        ></a>
+      </li>
+      <li><a href="#" class="active">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li>
+        <a href="#"
+          ><span class="ir_pm">다음페이지</span
+          ><i class="fas fa-chevron-right"></i
+        ></a>
+      </li>
+      <li>
+        <a href="#" class="last"
+          ><span class="ir_pm">마지막페이지</span
+          ><i class="fas fa-chevron-right"></i
+        ></a>
+      </li>
+    </ul>
+  </div>
+  <div class="review_modal">
+    <div class="modal_bg"></div>
+    <div class="modal_inner">
+      <div class="modal_top">
+        <img src="../story/subimg/modal_review_top_icon.png" alt="" /> 리뷰보기
+        <button class="close" title="닫기">닫기버튼</button>
+      </div>
+      <li class="p b">
+        <div class="top clear">
+          <div class="review_star">
+            <img src="../story/subimg/review_star1.png" alt="별점" />
+            <img src="../story/subimg/review_star1.png" alt="별점" />
+            <img src="../story/subimg/review_star1.png" alt="별점" />
+            <img src="../story/subimg/review_star1.png" alt="별점" />
+            <img src="../story/subimg/review_star1.png" alt="별점" />
+          </div>
+          <span class="name">인*선</span>
+        </div>
+        <div class="txt">
+          <div class="msg">
+            <div class="msg_tit">얌핑거 세트</div>
+            <p>
+              얌핑거 이번에 처음 주문했는데 맛있어요~<br />빵덕이네 특유의
+              쫀득한 식감이 넘 좋아용<br />
+              에어프라이어에 돌리니까 완전 겉바속촉..<br />
+              확실히 밀가루를 쓰지 않아서 속도 편하고 최고입니당..
+            </p>
+          </div>
+          <div class="pic">
+            <div>
+              <img src="../story/subimg/review_img(2).JPG" alt="리뷰이미지" />
+            </div>
+            <div>
+              <img src="../story/subimg/review_img(3).JPG" alt="리뷰이미지" />
+            </div>
+            <div>
+              <img src="../story/subimg/review_img(4).JPG" alt="리뷰이미지" />
+            </div>
+          </div>
+        </div>
+      </li>
+    </div>
+  </div>
+  <!--x-sub-cake-reserve--->
+  <footer>
+    <div class="container">
+      <img src="../assets/img/footer_logo.png" alt="푸터빵덕로고" />
+      <div class="footer clear">
+        <div class="footer_left">
+          <div class="phone">
+            <h3>문의전화</h3>
+            <p>070-0594-6566</p>
+          </div>
+          <div class="shop_menu">
+            <h3>SHOP MENU</h3>
+            <a href="faq.html" class="txt"
+              >자주묻는질문<span class="bar"></span
+            ></a>
+            <a href="board.html" class="txt"
+              >공지사항<span class="bar"></span
+            ></a>
+            <a href="customer_center.html" class="txt">고객의소리</a
+            ><br /><br />
+            <p class="txt">통신판매업신고 : 제 2020-서울강남-00096호</p>
+            <p class="txt">사업자 등록번호 : 211-87-844424</p>
+            <br />
+            <p>
+              <a href="join-agree.html" class="txt"><b>개인정보처리방침</b></a>
+            </p>
+          </div>
+        </div>
+        <div class="footer_center">
+          <div class="bank">
+            <h3>BANK INFO</h3>
+            <p class="txt">우리은행<span class="bar"></span>1002-450-904652</p>
+            <p class="txt">예금주<span class="bar"></span>주식회사빵덕이네</p>
+          </div>
+          <div class="order_tracking">
+            <h3>ORDER TRACKING</h3>
+            <p class="txt">우체국택배(TEL:1588-4040)</p>
+            <p class="txt tracking">
+              (배송정보는 해당 택배사를 통해 조회가 가능하십니다.)
+            </p>
+          </div>
+        </div>
+        <div class="footer_right">
+          <div class="place">
+            <h3>위치</h3>
+            <p>서울시 동작구 동작대로 28바길 10</p>
+          </div>
+          <div class="sns">
+            <h3>SNS</h3>
+            <p>
+              <a href="details.html" title="facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="" title="instagram"><i class="fab fa-instagram"></i></a>
+              <a href="details.html" title="twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </p>
+          </div>
+          <div class="copyright">
+            <p>COPYRIGHT © 2020 BBANGDUCK<br />ALL RIGHTS RESERVED.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>

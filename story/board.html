@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="No sugar No gruten, Ketojenic Bakery" />
+    <meta name="author" content="Ji hyeon" />
+    <title>게시판- BBANGDUCK's Bakery</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../assets/img/pickicon.png"
+    />
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/sub.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/86f00f2bf6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="../assets/js/common.js" defer></script>
+    <script src="../assets/js/sub.js" defer></script>
+  </head>
+</html>
+<body>
+  <div id="skip_menu">
+    <a href="#sub_container">본문 바로가기</a>
+  </div>
+  <header>
+    <!-- 최상단 배너 -->
+    <div class="topline">
+      <a href="#">
+        신규가입시 적립금 1000원, 30000원이상 구매 시 무료 배송 >
+      </a>
+      <div class="container">
+        <a href="#" class="btn_close icon">레이어 닫기</a>
+      </div>
+    </div>
+    <div class="container">
+      <!-- 사이드바 -->
+      <div class="side-menu">
+        <input type="checkbox" id="hamburger" />
+        <label for="hamburger" class="ir_pm hamburgerLabel">
+          햄버거버튼
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="sidebar clear">
+          <div class="sidebar_user">
+            <button onclick="location.href='login.html'">로그인</button
+            ><button onclick="location.href='join-agree.html'">회원가입</button>
+          </div>
+          <ul class="mobile_menu_list">
+            <li>
+              <a href="brandstory.html"><span></span>빵덕이네 이야기</a>
+            </li>
+            <li class="hasTwoDepth">
+              <a href="#"><span></span>메뉴</a>
+              <ul class="two_depth">
+                <li><a href="menu-bread.html">빵</a></li>
+                <li><a href="menu-cookie.html">쿠키</a></li>
+                <li><a href="menu-cake.html">케이크</a></li>
+              </ul>
+            </li>
+            <li class="hasTwoDepth">
+              <a href="#"><span></span>이벤트</a>
+              <ul class="two_depth">
+                <li><a href="event.html">진행중 이벤트</a></li>
+                <li><a href="event-end.html">마감된 이벤트</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="recommend.html"><span></span>맞춤추천</a>
+            </li>
+            <li>
+              <a href="#"><span></span>케이크 예약</a>
+              <ul class="two_depth">
+                <li>
+                  <a href="cake-reservation.html">케이크 예약안내</a>
+                </li>
+                <li><a href="cake-form.html">예약폼 작성</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="review.html"><span></span>구매후기</a>
+            </li>
+            <li class="hasTwoDepth">
+              <a href="#"><span></span>고객센터</a>
+              <ul class="two_depth">
+                <li>
+                  <a href="faq.html">자주묻는질문</a>
+                </li>
+                <li>
+                  <a href="customer_center.html">고객의 소리</a>
+                </li>
+                <li>
+                  <a href="board.html">공지사항</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="sidebar_footer">
+            <span class="sidebar_footer_logo"></span>
+            <div class="sidebar_footer_desc">
+              <div class="phone">
+                <h3>문의전화</h3>
+                <div class="phone_number">070-0594-6566</div>
+              </div>
+              <div class="bank">
+                <h3>BANK INFO</h3>
+                <div class="txt">우리은행 | 1002-450-904652</div>
+                <div class="txt">예금주<span>| 주식회사빵덕이네</span></div>
+              </div>
+              <div class="about">
+                <h3>ABOUT US</h3>
+                <div class="txt">㈜ 빵덕</div>
+                <div class="txt">대표 : 김지현</div>
+                <div class="txt">E-mail : wlgus6566@naver.com</div>
+                <div class="txt">
+                  주소: 서울시 동작구 동작대로 29바길 10 빵덕이네
+                </div>
+              </div>
+            </div>
+          </div>
+          <label for="hamburger"></label>
+        </div>
+        <!-- 사이드바 외 영역 -->
+        <label for="hamburger" class="background"></label>
+      </div>
+      <!-- 네비게이션 바 -->
+      <nav>
+        <h1>
+          <a href="../index.html" class="logo ir_pm">빵덕로고</a>
+        </h1>
+        <ul class="nav_left">
+          <li>
+            <a href="login.html" class="login ir_pm">로그인 아이콘</a>
+          </li>
+          <li class="two_depth">
+            <a href="brandstory.html">빵덕이네 이야기</a>
+            <ul>
+              <li><a href="brandstory.html">브랜드스토리</a></li>
+            </ul>
+          </li>
+          <li class="two_depth">
+            <a href="menu-bread.html">메뉴</a>
+            <ul>
+              <li><a href="menu-bread.html">빵</a></li>
+              <li><a href="menu-cookie.html">쿠키</a></li>
+              <li><a href="menu-cake.html">케이크</a></li>
+            </ul>
+          </li>
+          <li class="two_depth">
+            <a href="event.html">이벤트</a>
+            <ul>
+              <li><a href="event.html">진행중 이벤트</a></li>
+              <li><a href="event-end.html">마감된 이벤트</a></li>
+            </ul>
+          </li>
+          <li class="two_depth">
+            <a href="recommend.html">맞춤추천</a>
+            <ul>
+              <li><a href="recommend.html">맞춤추천</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav_right">
+          <li class="two_depth">
+            <a href="cake-reservation.html">케이크 예약</a>
+            <ul>
+              <li><a href="cake-reservation.html">에약안내</a></li>
+              <li><a href="cake-form.html">예약하기</a></li>
+            </ul>
+          </li>
+          <li class="two_depth">
+            <a href="review.html">구매후기</a>
+            <ul>
+              <li><a href="review.html">구매후기</a></li>
+            </ul>
+          </li>
+          <li class="two_depth">
+            <a href="board.html">고객센터</a>
+            <ul>
+              <li><a href="faq.html">자주묻는질문</a></li>
+              <li><a href="customer_center.html">고객의 소리</a></li>
+              <li><a href="board.html">공지사항</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="cart.html" class="shopping" data-cart="4"
+              >장바구니</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-----x---header----->
+    <section id="sub_banner">
+        <div class="sub_banner">
+            <div class="sub_banner_bg customer_banner_bg ir_pm">고객센터 배경</div>
+            <div class="sub_banner_tit">
+                <h2>CUSTOMER SERVICE</h2>
+            </div>
+            <ul class="depth2">
+              <li><a href="faq.html">자주묻는질문</a></li>
+              <li><a href="customer_center.html">고객의 소리</a></li>
+              <li><a href="#" class="active">공지사항</a></li>
+            </ul>
+        </div>
+    </section>
+    <!----X--sub banner--->
+    <div id="sub_container">
+      <div class="sub_inner">
+        <h2 class="sub_tit">
+            공지사항
+        </h2>
+        <div class="board_inner">
+          <div class="board_top">
+            <p class="board_total"><span>전체 <strong>58</strong> 건</span></p>
+            <!-- 게시판 검색 -->
+            <form method="post" name="search_form">
+              <fieldset class="board_search clear">
+                <select name="searchType" title="검색할 명을 선택해주세요">
+                  <option value="제목">제목</option>
+                  <option value="내용">내용</option>
+                  <option value="제목+내용">제목+내용</option>
+                  <option value="작성자">작성자</option>
+                </select>
+                <input type="text" title="검색어를 입력해주세요">
+                <button type="submit" title="검색실행"><span>검색</span><i class="fas fa-search"></i>
+                </button>
+              </fieldset>
+            </form>
+            <!-- //게시판 검색 --> 
+          </div>
+          <table class="board_content">
+            <caption class="hide">공지사항 목록</caption>
+            <colgroup>
+              <col style="width:8%;">
+              <col style="width:auto;">
+              <col style="width:12%;">
+              <col style="width:12%;">
+              <col style="width:8%;">
+            </colgroup>
+            <thead>
+              <tr>
+                <th>번호</th>
+                <th>제목</th>
+                <th>등록자</th>
+                <th>등록일</th>
+                <th>조회수</th>
+              </tr>
+            <tbody>
+              <tr>
+                <td class="num">58</td>
+                <td class="title">
+                  <em>중요</em><a href="board_detail.html">친구에게 빵덕이네를 추천하시면</a>
+                </td>
+                <td class="user">
+                  <b>관리자</b>
+                </td>
+                <td class="num">2020-08-31</td>
+                <td class="num">39</td>
+              </tr>
+              <tr>
+                <td class="num">57</td>
+                <td class="title">
+                  <em>중요</em><a href="#">[주간라인업] 9월 라인업 안내</a>
+                </td>
+                <td class="user">
+                  <b>관리자</b>
+                </td>
+                <td class="num">2020-08-01</td>
+                <td class="num">79</td>
+              </tr>
+              <tr>
+                <td class="num">56</td>
+                <td class="title">
+                  <em>중요</em><a href="#">8월 휴무일 안내</a>
+                </td>
+                <td class="user">
+                  <b>관리자</b>
+                </td>
+                <td class="num">2020-08-25</td>
+                <td class="num">68</td>
+              </tr>
+              <tr>
+                <td class="num">55</td>
+                <td class="title">
+                  <em>중요</em><a href="board_detail.html">새로워진 멤버십서비스를 소개합니다.</a>
+                </td>
+                <td class="user">
+                  <b>관리자</b>
+                </td>
+                <td class="num">2020-08-19</td>
+                <td class="num">65</td>
+              </tr>
+              <tr>
+                <td class="num">54</td>
+                <td class="title">
+                  <a href="board_detail.html">배송폭주로 인한 배송지연 및 상품품절</a>
+                </td>
+                <td class="user">
+                  <b>관리자</b>
+                </td>
+                <td class="num">2020-08-18</td>
+                <td class="num">120</td>
+              </tr>
+              <tr>
+                <td class="num">53</td>
+                <td class="title">
+                  <a href="board_detail.html">빵덕이네 홈페이지 리뉴얼</a>
+                </td>
+                <td class="user">
+                  <b>관리자</b>
+                </td>
+                <td class="num">2020-07-30</td>
+                <td class="num">82</td>
+              </tr>
+              <tr>
+                <td class="num">52</td>
+                <td class="title">
+                  <a href="board_detail.html">친구에게 빵덕이네를 추천하시면</a>
+                </td>
+                <td class="user">
+                  <b>관리자</b>
+                </td>
+                <td class="num">2020-07-29</td>
+                <td class="num">93</td>
+              </tr>
+              <tr>
+                <td class="num">51</td>
+                <td class="title">
+                  <a href="board_detail.html">빵덕이네 이용 가이드</a>
+                </td>
+                <td class="user">
+                  <b>관리자</b>
+                </td>
+                <td class="num">2020-06-26</td>
+                <td class="num">140</td>
+              </tr>
+              <tr>
+                <td class="num">50</td>
+                <td class="title">
+                  <a href="board_detail.html">적립금 선결제</a>
+                </td>
+                <td class="user">
+                  <b>관리자</b>
+                </td>
+                <td class="num">2020-06-19</td>
+                <td class="num">111</td>
+              </tr>
+              <tr>
+                <td class="num">49</td>
+                <td class="title">
+                  <a href="board_detail.html">새로워진 멤버십서비스를 소개합니다.</a>
+                </td>
+                <td class="user">
+                  <b>관리자</b>
+                </td>
+                <td class="num">2020-06-02</td>
+                <td class="num">270</td>
+              </tr>
+            </tbody>
+            </thead>
+          </table>
+        </div>
+      </div>
+      <div class="paging">
+        <ul>
+            <li><a href="#" class="first"><span class="ir_pm">첫페이지</span><i class="fas fa-chevron-left"></i></a></li>
+            <li><a href="#"><span class="ir_pm">이전페이지</span><i class="fas fa-chevron-left"></i></a></li>
+            <li><a href="#" class="active">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#"><span class="ir_pm">다음페이지</span><i class="fas fa-chevron-right"></i></a></li>
+            <li><a href="#" class="last"><span class="ir_pm">마지막페이지</span><i class="fas fa-chevron-right"></i></a></li>
+        </ul>
+    </div>
+    </div>  
+     <!--X--sub-cake-reserve---->      
+  <footer>
+    <div class="container">
+      <img src="../assets/img/footer_logo.png" alt="푸터빵덕로고" />
+      <div class="footer clear">
+        <div class="footer_left">
+          <div class="phone">
+            <h3>문의전화</h3>
+            <p>070-0594-6566</p>
+          </div>
+          <div class="shop_menu">
+            <h3>SHOP MENU</h3>
+            <a href="faq.html" class="txt"
+              >자주묻는질문<span class="bar"></span
+            ></a>
+            <a href="board.html" class="txt"
+              >공지사항<span class="bar"></span
+            ></a>
+            <a href="customer_center.html" class="txt">고객의소리</a
+            ><br /><br />
+            <p class="txt">통신판매업신고 : 제 2020-서울강남-00096호</p>
+            <p class="txt">사업자 등록번호 : 211-87-844424</p>
+            <br />
+            <p>
+              <a href="join-agree.html" class="txt"><b>개인정보처리방침</b></a>
+            </p>
+          </div>
+        </div>
+        <div class="footer_center">
+          <div class="bank">
+            <h3>BANK INFO</h3>
+            <p class="txt">우리은행<span class="bar"></span>1002-450-904652</p>
+            <p class="txt">예금주<span class="bar"></span>주식회사빵덕이네</p>
+          </div>
+          <div class="order_tracking">
+            <h3>ORDER TRACKING</h3>
+            <p class="txt">우체국택배(TEL:1588-4040)</p>
+            <p class="txt tracking">
+              (배송정보는 해당 택배사를 통해 조회가 가능하십니다.)
+            </p>
+          </div>
+        </div>
+        <div class="footer_right">
+          <div class="place">
+            <h3>위치</h3>
+            <p>서울시 동작구 동작대로 28바길 10</p>
+          </div>
+          <div class="sns">
+            <h3>SNS</h3>
+            <p>
+              <a href="details.html" title="facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="" title="instagram"><i class="fab fa-instagram"></i></a>
+              <a href="details.html" title="twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </p>
+          </div>
+          <div class="copyright">
+            <p>COPYRIGHT © 2020 BBANGDUCK<br />ALL RIGHTS RESERVED.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+

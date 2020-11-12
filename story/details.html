@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="No sugar No gruten, Ketojenic Bakery" />
+    <meta name="author" content="Ji hyeon" />
+    <title>상품페이지 - BBANGDUCK's Bakery</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../assets/img/pickicon.png"
+    />
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/sub.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/86f00f2bf6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="../assets/js/common.js" defer></script>
+    <script src="../assets/js/sub.js" defer></script>
+  </head>
+</html>
+<body>
+  <div id="skip_menu">
+    <a href="#sub_container">본문 바로가기</a>
+  </div>
+  <header>
+    <!-- 최상단 배너 -->
+    <div class="topline">
+      <a href="#">
+        신규가입시 적립금 1000원, 30000원이상 구매 시 무료 배송 >
+      </a>
+      <div class="container">
+        <a href="#" class="btn_close icon">레이어 닫기</a>
+      </div>
+    </div>
+    <div class="container">
+      <!-- 사이드바 -->
+      <div class="side-menu">
+        <input type="checkbox" id="hamburger" />
+        <label for="hamburger" class="ir_pm hamburgerLabel">
+          햄버거버튼
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="sidebar clear">
+          <div class="sidebar_user">
+            <button onclick="location.href='login.html'">로그인</button
+            ><button onclick="location.href='join-agree.html'">회원가입</button>
+          </div>
+          <ul class="mobile_menu_list">
+            <li>
+              <a href="brandstory.html"><span></span>빵덕이네 이야기</a>
+            </li>
+            <li class="hasTwoDepth">
+              <a href="#"><span></span>메뉴</a>
+              <ul class="two_depth">
+                <li><a href="menu-bread.html">빵</a></li>
+                <li><a href="menu-cookie.html">쿠키</a></li>
+                <li><a href="menu-cake.html">케이크</a></li>
+              </ul>
+            </li>
+            <li class="hasTwoDepth">
+              <a href="#"><span></span>이벤트</a>
+              <ul class="two_depth">
+                <li><a href="event.html">진행중 이벤트</a></li>
+                <li><a href="event-end.html">마감된 이벤트</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="recommend.html"><span></span>맞춤추천</a>
+            </li>
+            <li>
+              <a href="#"><span></span>케이크 예약</a>
+              <ul class="two_depth">
+                <li>
+                  <a href="cake-reservation.html">케이크 예약안내</a>
+                </li>
+                <li><a href="cake-form.html">예약폼 작성</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="review.html"><span></span>구매후기</a>
+            </li>
+            <li class="hasTwoDepth">
+              <a href="#"><span></span>고객센터</a>
+              <ul class="two_depth">
+                <li>
+                  <a href="faq.html">자주묻는질문</a>
+                </li>
+                <li>
+                  <a href="customer_center.html">고객의 소리</a>
+                </li>
+                <li>
+                  <a href="board.html">공지사항</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="sidebar_footer">
+            <span class="sidebar_footer_logo"></span>
+            <div class="sidebar_footer_desc">
+              <div class="phone">
+                <h3>문의전화</h3>
+                <div class="phone_number">070-0594-6566</div>
+              </div>
+              <div class="bank">
+                <h3>BANK INFO</h3>
+                <div class="txt">우리은행 | 1002-450-904652</div>
+                <div class="txt">예금주<span>| 주식회사빵덕이네</span></div>
+              </div>
+              <div class="about">
+                <h3>ABOUT US</h3>
+                <div class="txt">㈜ 빵덕</div>
+                <div class="txt">대표 : 김지현</div>
+                <div class="txt">E-mail : wlgus6566@naver.com</div>
+                <div class="txt">
+                  주소: 서울시 동작구 동작대로 29바길 10 빵덕이네
+                </div>
+              </div>
+            </div>
+          </div>
+          <label for="hamburger"></label>
+        </div>
+        <!-- 사이드바 외 영역 -->
+        <label for="hamburger" class="background"></label>
+      </div>
+      <!-- 네비게이션 바 -->
+      <nav>
+        <h1>
+          <a href="../index.html" class="logo ir_pm">빵덕로고</a>
+        </h1>
+        <ul class="nav_left">
+          <li>
+            <a href="login.html" class="login ir_pm">로그인 아이콘</a>
+          </li>
+          <li class="two_depth">
+            <a href="brandstory.html">빵덕이네 이야기</a>
+            <ul>
+              <li><a href="brandstory.html">브랜드스토리</a></li>
+            </ul>
+          </li>
+          <li class="two_depth">
+            <a href="menu-bread.html">메뉴</a>
+            <ul>
+              <li><a href="menu-bread.html">빵</a></li>
+              <li><a href="menu-cookie.html">쿠키</a></li>
+              <li><a href="menu-cake.html">케이크</a></li>
+            </ul>
+          </li>
+          <li class="two_depth">
+            <a href="event.html">이벤트</a>
+            <ul>
+              <li><a href="event.html">진행중 이벤트</a></li>
+              <li><a href="event-end.html">마감된 이벤트</a></li>
+            </ul>
+          </li>
+          <li class="two_depth">
+            <a href="recommend.html">맞춤추천</a>
+            <ul>
+              <li><a href="recommend.html">맞춤추천</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav_right">
+          <li class="two_depth">
+            <a href="cake-reservation.html">케이크 예약</a>
+            <ul>
+              <li><a href="cake-reservation.html">에약안내</a></li>
+              <li><a href="cake-form.html">예약하기</a></li>
+            </ul>
+          </li>
+          <li class="two_depth">
+            <a href="review.html">구매후기</a>
+            <ul>
+              <li><a href="review.html">구매후기</a></li>
+            </ul>
+          </li>
+          <li class="two_depth">
+            <a href="board.html">고객센터</a>
+            <ul>
+              <li><a href="faq.html">자주묻는질문</a></li>
+              <li><a href="customer_center.html">고객의 소리</a></li>
+              <li><a href="board.html">공지사항</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="cart.html" class="shopping" data-cart="4">장바구니</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-----x---header----->
+  <a href="#" class="gototop">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+  <!-- gototop버튼 -->
+  <div id="sub_container">
+    <div class="detail_inner">
+      <aside class="right_menu">
+        <span>TODAY's</span>
+        <div class="today_slide swiper-container">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <a href="#"
+                ><img
+                  src="../story/subimg/detail_big_thumb(1).jpg"
+                  alt="오늘본상품"
+              /></a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#"
+                ><img
+                  src="../story/subimg/detail_big_thumb(2).jpg"
+                  alt="오늘본상품"
+              /></a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#"
+                ><img
+                  src="../story/subimg/detail_big_thumb(3).jpg"
+                  alt="오늘본상품"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="slide_btn clear">
+          <div class="swiper-button-prev today_prev">이전버튼</div>
+          <div class="swiper-button-next today_next">다음버튼</div>
+        </div>
+        <a href="#" class="right_basket">
+          <span>장바구니</span>
+        </a>
+        <a href="#" class="right_order">
+          <span>주문/배송</span>
+        </a>
+      </aside>
+      <div class="detail_top clear">
+        <div class="thumbs">
+          <div class="big_thumb">
+            <img src="subimg/detail_big_thumb(1).jpg" alt="얌핑거" />
+          </div>
+          <div class="small_thumb">
+            <div class="swiper-container">
+              <ul class="thumb_img swiper-wrapper">
+                <li class="active swiper-slide">
+                  <img src="subimg/detail_big_thumb(1).jpg" alt="얌핑거1" />
+                </li>
+                <li class="swiper-slide">
+                  <img src="subimg/detail_big_thumb(2).jpg" alt="얌핑거2" />
+                </li>
+                <li class="swiper-slide">
+                  <img src="subimg/detail_big_thumb(3).jpg" alt="얌핑거3" />
+                </li>
+                <li class="active swiper-slide">
+                  <img src="subimg/detail_big_thumb(4).jpg" alt="얌핑거1" />
+                </li>
+                <li class="swiper-slide">
+                  <img src="subimg/detail_big_thumb(2).jpg" alt="얌핑거2" />
+                </li>
+              </ul>
+            </div>
+            <div class="thumb_slide_btn">
+              <div class="swiper-button-prev">
+                <i class="fas fa-chevron-left"></i>
+              </div>
+              <div class="swiper-button-next">
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="detail_info">
+          <div class="title">
+            <h2>얌핑거</h2>
+            <span><b>부담없는 사이즈</b>로 가벼운 한끼에 제격!</span>
+          </div>
+          <div class="price">
+            <b>판매가</b><strong class="unit_price">4,900원</strong>
+          </div>
+          <div class="info_area">
+            <div class="info_part">
+              <span>적립금</span>
+              <em>로그인 후 구매 시 최대 구매금액의 7%를 적립해드립니다</em>
+            </div>
+            <div class="info_part">
+              <span>배송비</span>
+              <em>무료 배송 (회원 9,900원 / 비회원 40,000원 이상 결제 시)</em>
+            </div>
+            <div class="detail_option">
+              <select name="" id="">
+                <option value="" hidden>옵션을 선택해주세요</option>
+                <option value="신선포장(드라이아이스)">
+                  신선포장(드라이아이스)
+                </option>
+                <option value="없음">없음</option>
+              </select>
+            </div>
+            <div class="selected_item">
+              <div class="item_name">
+                <strong>당근케이크</strong>
+                <a href="#" title="선택취소버튼" class="delete"
+                  ><i class="fas fa-times"></i
+                ></a>
+              </div>
+              <div class="qty_price">
+                <div class="item_qty">
+                  <a href="" class="minus">수량감소</a>
+                  <input
+                    type="text"
+                    value="1"
+                    maxlength="3"
+                    class="qty"
+                    readonly
+                  />
+                  <a href="" class="plus">수량증가</a>
+                </div>
+                <div class="item_total_price">4,900원</div>
+              </div>
+            </div>
+            <div class="selected_item option">
+              <div class="item_name">
+                <strong>신선포장(드라이아이스)</strong>
+                <a href="#" title="선택취소버튼" class="delete optdel"
+                  ><i class="fas fa-times"></i
+                ></a>
+              </div>
+              <div class="qty_price">1,000원</div>
+            </div>
+            <div class="total_price">
+              <span class="totalQty">총 제품금액</span>
+              <strong class="totalPrc">4,900원</strong>
+            </div>
+            <div class="button_area">
+              <a href="" class="cartBtn nomalBtn">장바구니</a>
+              <a href="" class="buyBtn nomalBtn">바로구매</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="detail_contents">
+        <div id="detail1">
+          <ul class="detail_tap">
+            <li>
+              <a href="#detail1" class="tap1 active">
+                상품설명
+                <img
+                  src="../story/subimg/datail_tab_arrow.png"
+                  alt="탭이미지"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#detail2" class="tap2">
+                배송안내
+                <img
+                  src="../story/subimg/datail_tab_arrow.png"
+                  alt="탭이미지"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#detail3" class="tap3">
+                구매후기
+                <img
+                  src="../story/subimg/datail_tab_arrow.png"
+                  alt="탭이미지"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#detail4" class="tap4">
+                상품문의
+                <img
+                  src="../story/subimg/datail_tab_arrow.png"
+                  alt="탭이미지"
+                />
+              </a>
+            </li>
+          </ul>
+          <div class="detail_con">
+            <div class="main_info">
+              <img
+                src="../story/subimg/detail_main_img.jpg"
+                alt="얌핑거상세이미지"
+              />
+            </div>
+            <!-- //메인상세이미지 -->
+            <div class="nut_info">
+              <img
+                src="../story/subimg/detail_main_img_nut.jpg"
+                alt="얌핑거영양성분"
+              />
+            </div>
+            <!-- //영양성분 -->
+          </div>
+        </div>
+        <div id="detail2">
+          <ul class="detail_tap">
+            <li>
+              <a href="#detail1" class="tap1">
+                상품설명
+                <img
+                  src="../story/subimg/datail_tab_arrow.png"
+                  alt="탭이미지"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#detail2" class="active tap2">
+                배송안내
+                <img
+                  src="../story/subimg/datail_tab_arrow.png"
+                  alt="탭이미지"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#detail3" class="tap3">
+                구매후기
+                <img
+                  src="../story/subimg/datail_tab_arrow.png"
+                  alt="탭이미지"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#detail4" class="tap4">
+                상품문의
+                <img
+                  src="../story/subimg/datail_tab_arrow.png"
+                  alt="탭이미지"
+                />
+              </a>
+            </li>
+          </ul>
+          <div class="detail_con datail2">
+            <div class="ship_info">
+              <img
+                src="../story/subimg/detail_main_img_ship.jpg"
+                alt="배송공지"
+              />
+            </div>
+          </div>
+          <!-- //배송안내 -->
+          <div id="detail3">
+            <ul class="detail_tap">
+              <li>
+                <a href="#detail1" class="tap1">
+                  상품설명
+                  <img
+                    src="../story/subimg/datail_tab_arrow.png"
+                    alt="탭이미지"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#detail2" class="tap2">
+                  배송안내
+                  <img
+                    src="../story/subimg/datail_tab_arrow.png"
+                    alt="탭이미지"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#detail3" class="tap3 active">
+                  구매후기
+                  <img
+                    src="../story/subimg/datail_tab_arrow.png"
+                    alt="탭이미지"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#detail4" class="tap4">
+                  상품문의
+                  <img
+                    src="../story/subimg/datail_tab_arrow.png"
+                    alt="탭이미지"
+                  />
+                </a>
+              </li>
+            </ul>
+            <div class="star">
+              <p>
+                <img src="../story/subimg/comment_star.png" alt="star" />
+                <img src="../story/subimg/comment_star.png" alt="star" />
+                <img src="../story/subimg/comment_star.png" alt="star" />
+                <img src="../story/subimg/comment_star.png" alt="star" />
+                <img src="../story/subimg/comment_star.png" alt="star" />
+              </p>
+            </div>
+            <div class="comment">
+              <form action="" method="post">
+                <fieldset>리뷰작성</fieldset>
+                <div class="review_top">
+                  <select name="grade">
+                    <option value="5">★★★★★</option>
+                    <option value="4">★★★★☆</option>
+                    <option value="3">★★★☆☆</option>
+                    <option value="2">★★☆☆☆</option>
+                    <option value="1">★☆☆☆☆</option>
+                  </select>
+                  <p class="file">
+                    <input type="file" id="file" />
+                    <label for="file">
+                      <img
+                        src="../story/subimg/comment_camera.png"
+                        alt="파일업로드"
+                      />
+                      사진추가
+                    </label>
+                  </p>
+                </div>
+                <div class="review_con">
+                  <textarea
+                    id=""
+                    cols="30"
+                    rows="10"
+                    placeholder="로그인 후 작성 해주세요!"
+                    readonly
+                  ></textarea>
+                  <input type="submit" value="리뷰등록" />
+                </div>
+              </form>
+            </div>
+            <div class="review">
+              <ul>
+                <li>
+                  <div class="top clear">
+                    <div class="review_star">
+                      <img src="../story/subimg/review_star1.png" alt="별점" />
+                      <img src="../story/subimg/review_star1.png" alt="별점" />
+                      <img src="../story/subimg/review_star1.png" alt="별점" />
+                      <img src="../story/subimg/review_star1.png" alt="별점" />
+                      <img src="../story/subimg/review_star1.png" alt="별점" />
+                    </div>
+                    <span class="name">인*선</span>
+                  </div>
+                  <div class="txt">
+                    <div class="msg">
+                      <p>
+                        얌핑거 이번에 처음 주문했는데 맛있어요~ 빵덕이네 특유의
+                        쫀득한 식감이 넘 좋아용
+                      </p>
+                      <p class="more_txt">
+                        에어프라이어에 돌리니까 완전 겉바속촉..<br />
+                        확실히 밀가루를 쓰지 않아서 속도 편하고 최고입니당..
+                      </p>
+                      <em class="more">...더보기</em>
+                    </div>
+                    <div class="pic">
+                      <img
+                        src="../story/subimg/review_img.JPG"
+                        alt="리뷰이미지"
+                      />
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="top clear">
+                    <div class="review_star">
+                      <img src="../story/subimg/review_star1.png" alt="별점" />
+                      <img src="../story/subimg/review_star1.png" alt="별점" />
+                      <img src="../story/subimg/review_star1.png" alt="별점" />
+                      <img src="../story/subimg/review_star2.png" alt="별점" />
+                      <img src="../story/subimg/review_star2.png" alt="별점" />
+                    </div>
+                    <span class="name">김*별</span>
+                  </div>
+                  <div class="txt">
+                    <div class="msg">
+                      <p>
+                        자극적이지 않고 완전 편한맛 얌핑거! 먹고 싶어 주문했는데
+                        역시나 기대를 저버리지 않았어요! 너무 맛있었어요~
+                      </p>
+                      <p class="more_txt">
+                        특히 옥수수가 오독오독 씹히는 맛이 군것질 생각날 때
+                        하나씩 먹으면<br />
+                        군것질 욕구 충분히 만족시키고 좋아요~
+                      </p>
+                      <em class="more">...더보기</em>
+                    </div>
+                    <div class="pic">
+                      <img
+                        src="../story/subimg/review_img.JPG"
+                        alt="리뷰이미지"
+                      />
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="top clear">
+                    <div class="review_star">
+                      <img src="../story/subimg/review_star1.png" alt="별점" />
+                      <img src="../story/subimg/review_star1.png" alt="별점" />
+                      <img src="../story/subimg/review_star1.png" alt="별점" />
+                      <img src="../story/subimg/review_star1.png" alt="별점" />
+                      <img
+                        src="../story/subimg/review_star2.png"
+                        alt="별점빈거"
+                      />
+                    </div>
+                    <span class="name">이*민</span>
+                  </div>
+                  <div class="txt">
+                    <div class="msg">
+                      <p>
+                        배송 진짜 빨라서 좋아요! 포슬포슬 피자향 솔솔솔,, 모든
+                        것이 좋아요.
+                      </p>
+                      <p class="more_txt">
+                        이번이 4번째 구매고 앞으로도 구매할게요~
+                      </p>
+                      <em class="more">...더보기</em>
+                    </div>
+                    <div class="pic">
+                      <img
+                        src="../story/subimg/review_img.JPG"
+                        alt="리뷰이미지"
+                      />
+                    </div>
+                  </div>
+                </li>
+                <a href="#" class="more_plus_btn">More</a>
+              </ul>
+            </div>
+          </div>
+          <!-- //구매후기 -->
+          <div id="detail4">
+            <ul class="detail_tap">
+              <li>
+                <a href="#detail1" class="tap1">
+                  상품설명
+                  <img
+                    src="../story/subimg/datail_tab_arrow.png"
+                    alt="탭이미지"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#detail2" class="tap2">
+                  유의사항 및 구매안내
+                  <img
+                    src="../story/subimg/datail_tab_arrow.png"
+                    alt="탭이미지"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#detail3" class="tap3">
+                  구매후기
+                  <img
+                    src="../story/subimg/datail_tab_arrow.png"
+                    alt="탭이미지"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#detail4" class="tap4 active">
+                  상품문의
+                  <img
+                    src="../story/subimg/datail_tab_arrow.png"
+                    alt="탭이미지"
+                  />
+                </a>
+              </li>
+            </ul>
+            <div class="inquiry_btn">
+              <a href="#" class="gray_btn">상품 문의하기</a>
+            </div>
+            <table>
+              <colgroup>
+                <col width="10%" />
+                <col width="*" />
+                <col width="10%" />
+                <col width="15%" />
+                <col width="10%" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <td class="num">번호</td>
+                  <td class="tit">제목</td>
+                  <td class="name">작성자</td>
+                  <td class="num">작성일</td>
+                  <td class="rep">답변</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr onclick="alert('본인 글만 열람 가능합니다.')">
+                  <td class="num">4</td>
+                  <td class="tit">영양성분과 칼로리</td>
+                  <td class="name">이*빈</td>
+                  <td class="num">2020-08-30</td>
+                  <td class="rep">완료</td>
+                </tr>
+                <tr onclick="alert('본인 글만 열람 가능합니다.')">
+                  <td class="num">3</td>
+                  <td class="tit">배송조회</td>
+                  <td class="name">이*경</td>
+                  <td class="num">2020-08-27</td>
+                  <td class="rep standby">대기</td>
+                </tr>
+                <tr onclick="alert('본인 글만 열람 가능합니다.')">
+                  <td class="num">2</td>
+                  <td class="tit">유통기한</td>
+                  <td class="name">허*윤</td>
+                  <td class="num">2020-08-30</td>
+                  <td class="rep">완료</td>
+                </tr>
+                <tr onclick="alert('본인 글만 열람 가능합니다.')">
+                  <td class="num">1</td>
+                  <td class="tit">영양성분이 알고싶어요</td>
+                  <td class="name">이*경</td>
+                  <td class="num">2020-08-14</td>
+                  <td class="rep standby">대기</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- //상품문의 -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---x--sub_container----->
+  <footer>
+    <div class="container">
+      <img src="../assets/img/footer_logo.png" alt="푸터빵덕로고" />
+      <div class="footer clear">
+        <div class="footer_left">
+          <div class="phone">
+            <h3>문의전화</h3>
+            <p>070-0594-6566</p>
+          </div>
+          <div class="shop_menu">
+            <h3>SHOP MENU</h3>
+            <a href="faq.html" class="txt"
+              >자주묻는질문<span class="bar"></span
+            ></a>
+            <a href="board.html" class="txt"
+              >공지사항<span class="bar"></span
+            ></a>
+            <a href="customer_center.html" class="txt">고객의소리</a
+            ><br /><br />
+            <p class="txt">통신판매업신고 : 제 2020-서울강남-00096호</p>
+            <p class="txt">사업자 등록번호 : 211-87-844424</p>
+            <br />
+            <p>
+              <a href="join-agree.html" class="txt"><b>개인정보처리방침</b></a>
+            </p>
+          </div>
+        </div>
+        <div class="footer_center">
+          <div class="bank">
+            <h3>BANK INFO</h3>
+            <p class="txt">우리은행<span class="bar"></span>1002-450-904652</p>
+            <p class="txt">예금주<span class="bar"></span>주식회사빵덕이네</p>
+          </div>
+          <div class="order_tracking">
+            <h3>ORDER TRACKING</h3>
+            <p class="txt">우체국택배(TEL:1588-4040)</p>
+            <p class="txt tracking">
+              (배송정보는 해당 택배사를 통해 조회가 가능하십니다.)
+            </p>
+          </div>
+        </div>
+        <div class="footer_right">
+          <div class="place">
+            <h3>위치</h3>
+            <p>서울시 동작구 동작대로 28바길 10</p>
+          </div>
+          <div class="sns">
+            <h3>SNS</h3>
+            <p>
+              <a href="details.html" title="facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="" title="instagram"><i class="fab fa-instagram"></i></a>
+              <a href="details.html" title="twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </p>
+          </div>
+          <div class="copyright">
+            <p>COPYRIGHT © 2020 BBANGDUCK<br />ALL RIGHTS RESERVED.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>

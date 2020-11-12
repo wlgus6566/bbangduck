@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="No sugar No gruten, Ketojenic Bakery" />
+    <meta name="author" content="Ji hyeon" />
+    <title>Brand Story - BBANGDUCK's Bakery</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../assets/img/pickicon.png"
+		/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/sub.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/86f00f2bf6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../assets/js/retina.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="../assets/js/common.js" defer></script>
+    <script src="../assets/js/sub.js" defer></script>
+  </head>
+</html>
+<body>
+  <div id="skip_menu">
+    <a href="#sub_banner">본문 바로가기</a>
+  </div>
+  <header>
+    <!-- 최상단 배너 -->
+    <div class="topline">
+      <a href="#">
+        신규가입시 적립금 1000원, 30000원이상 구매 시 무료 배송 >
+      </a>
+      <div class="container">
+        <a href="#" class="btn_close icon">레이어 닫기</a>
+      </div>
+    </div>
+    <div class="container">
+      <!-- 사이드바 -->
+      <div class="side-menu">
+        <input type="checkbox" id="hamburger" />
+        <label for="hamburger" class="ir_pm hamburgerLabel">
+          햄버거버튼
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="sidebar clear">
+          <div class="sidebar_user">
+            <button onclick="location.href='login.html'">로그인</button
+            ><button onclick="location.href='join-agree.html'">회원가입</button>
+          </div>
+          <ul class="mobile_menu_list">
+            <li>
+              <a href="brandstory.html"><span></span>빵덕이네 이야기</a>
+            </li>
+            <li class="hasTwoDepth">
+              <a href="#"><span></span>메뉴</a>
+              <ul class="two_depth">
+                <li><a href="menu-bread.html">빵</a></li>
+                <li><a href="menu-cookie.html">쿠키</a></li>
+                <li><a href="menu-cake.html">케이크</a></li>
+              </ul>
+            </li>
+            <li class="hasTwoDepth">
+              <a href="#"><span></span>이벤트</a>
+              <ul class="two_depth">
+                <li><a href="event.html">진행중 이벤트</a></li>
+                <li><a href="event-end.html">마감된 이벤트</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="recommend.html"><span></span>맞춤추천</a>
+            </li>
+            <li>
+              <a href="#"><span></span>케이크 예약</a>
+              <ul class="two_depth">
+                <li>
+                  <a href="cake-reservation.html">케이크 예약안내</a>
+                </li>
+                <li><a href="cake-form.html">예약폼 작성</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="review.html"><span></span>구매후기</a>
+            </li>
+            <li class="hasTwoDepth">
+              <a href="#"><span></span>고객센터</a>
+              <ul class="two_depth">
+                <li>
+                  <a href="faq.html">자주묻는질문</a>
+                </li>
+                <li>
+                  <a href="customer_center.html">고객의 소리</a>
+                </li>
+                <li>
+                  <a href="board.html">공지사항</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="sidebar_footer">
+            <span class="sidebar_footer_logo"></span>
+            <div class="sidebar_footer_desc">
+              <div class="phone">
+                <h3>문의전화</h3>
+                <div class="phone_number">070-0594-6566</div>
+              </div>
+              <div class="bank">
+                <h3>BANK INFO</h3>
+                <div class="txt">우리은행 | 1002-450-904652</div>
+                <div class="txt">예금주<span>| 주식회사빵덕이네</span></div>
+              </div>
+              <div class="about">
+                <h3>ABOUT US</h3>
+                <div class="txt">㈜ 빵덕</div>
+                <div class="txt">대표 : 김지현</div>
+                <div class="txt">E-mail : wlgus6566@naver.com</div>
+                <div class="txt">
+                  주소: 서울시 동작구 동작대로 29바길 10 빵덕이네
+                </div>
+              </div>
+            </div>
+          </div>
+          <label for="hamburger"></label>
+        </div>
+        <!-- 사이드바 외 영역 -->
+        <label for="hamburger" class="background"></label>
+      </div>
+      <!-- 네비게이션 바 -->
+      <nav>
+        <h1>
+          <a href="../index.html" class="logo ir_pm">빵덕로고</a>
+        </h1>
+        <ul class="nav_left">
+          <li>
+            <a href="login.html" class="login ir_pm">로그인 아이콘</a>
+          </li>
+          <li class="two_depth">
+            <a href="story.html">빵덕이네 이야기</a>
+            <ul>
+              <li><a href="story.html">브랜드스토리</a></li>
+            </ul>
+          </li>
+          <li class="two_depth">
+            <a href="menu-bread.html">메뉴</a>
+            <ul>
+              <li><a href="menu-bread.html">빵</a></li>
+              <li><a href="menu-cookie.html">쿠키</a></li>
+              <li><a href="menu-cake.html">케이크</a></li>
+            </ul>
+          </li>
+          <li class="two_depth">
+            <a href="event.html">이벤트</a>
+            <ul>
+              <li><a href="event.html">진행중 이벤트</a></li>
+              <li><a href="event-end.html">마감된 이벤트</a></li>
+            </ul>
+          </li>
+          <li class="two_depth">
+            <a href="recommend.html">맞춤추천</a>
+            <ul>
+              <li><a href="recommend.html">맞춤추천</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav_right">
+          <li class="two_depth">
+            <a href="cake-reservation.html">케이크 예약</a>
+            <ul>
+              <li><a href="cake-reservation.html">에약안내</a></li>
+              <li><a href="cake-form.html">예약하기</a></li>
+            </ul>
+          </li>
+          <li class="two_depth">
+            <a href="review.html">구매후기</a>
+            <ul>
+              <li><a href="review.html">구매후기</a></li>
+            </ul>
+          </li>
+          <li class="two_depth">
+            <a href="board.html">고객센터</a>
+            <ul>
+              <li><a href="faq.html">자주묻는질문</a></li>
+              <li><a href="customer_center.html">고객의 소리</a></li>
+              <li><a href="board.html">공지사항</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="story/cart.html" class="shopping" data-cart="4"
+              >장바구니</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+	<!--------header-- ---->
+	<a href="#" class="gototop">
+			<i class="fas fa-arrow-up"></i>
+	</a>
+	<!-- gototop버튼 -->
+	<section id="sub_banner">
+			<div class="sub_banner">
+					<div class="sub_banner_bg story1_banner ir_pm">빵덕이네 이야기 배경</div>
+					<div class="sub_banner_tit">
+						<h2>BRAND STORY</h2>
+					</div>
+					<ul class="depth2">
+							<li><a href="story/story.html">브랜드스토리</a></li>
+							<li><a href="#">설탕 대체재</a></li>
+							<li><a href="#">밀가루 대체재</a></li>
+					</ul>
+			</div>
+	</section>
+	<!-----------------------------sub-banner------------------------------->
+	<div class="container">
+		<section class="tabs_panel">
+				<div class="bs_intro">
+						<div class="bs_intro_top">
+								<span>언제나 건강한 즐거움을 주는</span><br/>
+								<span>키토제닉 베이커리</span>
+						</div>
+						<div class="bs_intro_btm">
+								<p>빵덕이네는 맛있고 건강한 <span>무설탕 무밀가루 무방부제</span> 빵을 만드는<br> 
+										프리미엄 베이커리입니다.</p>
+								<span>KETO BREAD</span>
+						</div>
+				</div>
+				<!-----------------------------bs_intro------------------------------->
+				<div class="bs_cont">
+						<div class="bs_cont01">
+								<div class="bs_con01-left">
+										<h3>"좀 더 <span>신선하고 안전</span>하게"</h3>
+										<p>매장에서 즉석으로 <span>반죽부터 만들어</span> 신선합니다.</p>
+										<p>주재료인 아몬드는 공기중에서 쉽게 산화하기때문에 <br/>
+												매일 주문받은 수량만큼만 만들고 <span>즉시 밀봉포장</span>합니다.</p>
+								</div>
+								<div class="bs_con01-right"></div>
+						</div>
+						<div class="bs_cont02">
+								<div class="bs_con02-left"></div>
+								<div class="bs_con02-right">
+										<span class="delicious">DELICIOUS</span>
+										<h3>“조금이라도 더 맛있게”</h3>
+										<p>정제 탄수화물을 포함한 곡물과 설탕을<br/>
+												제한하면서도 <span>일반식 기준에서 경쟁력 있는 맛</span>이<br/>
+												되도록 연구를 반복합니다. </p>
+								</div>
+						</div>
+						<div class="bs_cont03">
+								<h3>위생적인 생산시설</h3>
+								<p>식품안전관리인증(HACCP)을 받은 생산시설에서 제품을 만듭니다.<br/>
+										HACCP는 원재료 관리, 제조, 가공, 유통 등 모든 과정의 오염과 이물질 혼입을<br/>
+										차단하고 관리하는 체계입니다.</p>
+						</div>
+						<div class="bs_cont04">
+								<div class="bs_con04-left"></div>
+								<div class="bs_con04-right">
+										<h3>“몸에 좋은<br/> <span>착한 재료</span>만 사용”</h3>
+										<p>모든 제품에는 <span>가공버터와 식물성크림</span>은<br/>
+												물론 <span>인공색소, 방부제</span>까지 들어가지 않습니다.</p>
+								</div>
+						</div>
+				</div>
+				<!-----------------------------bs_cont------------------------------->
+				<div class="free">
+						<h3>4 FREE</h3>
+						<p>저희는 모두가 안심하고 먹을 수 있는 빵을 만들기 위해<br/>
+								<span>다음과 같은 4가지</span>를 첨부하지 않습니다.</p>
+						<div class="free_box">
+								<div class="free_sugar">
+										<div class="breadshape">
+												<span class="ir_pm">설탕 아이콘</span>
+												<strong>NO 설탕</strong>
+												<p>혈당을 올리지 않는<br/> 천연대체재 사용</p>
+										</div>
+								</div>
+								<div class="free_gluten">
+										<div class="breadshape">
+												<span class="ir_pm">밀가루 아이콘</span>
+												<strong>NO 밀가루</strong>
+												<p>아몬드가루, 코코넛가루,<br/> 아마씨가루 사용</p>
+										</div>
+								</div>
+								<div class="free_add">
+										<div class="breadshape">
+												<span class="ir_pm">첨가물 아이콘</span>
+												<strong>NO 첨가물</strong>
+												<p>원재료 명암을 살릴 수 있는<br/> 천연소재를 사용</p>
+										</div>
+								</div>
+								<div class="free_butter">
+										<div class="breadshape">
+												<span class="ir_pm">버터 아이콘</span>
+												<strong>NO 버터</strong>
+												<p>유기농 목초를 먹고 자란<br/> 소에서 얻은 자연버터 사용</p>
+										</div>
+								</div>
+						</div>
+				</div>
+				<!-----------------------------free------------------------------->
+				<div class="bs_end">
+						<p>
+								저희는 각자의 이유로 밀가루와 설탕을 못 드시거나 건강을 위해 식단관리 중이신 분들에게도 맛있는 디저트가 주는 ‘일상의 즐거움’을 더해드리고 싶습니다.
+						</p>
+						<p>
+								다이어트, 당뇨, 아이들 건강 때문에 마음 놓고 고르지 못했던 빵.<br/> 이제 빵덕이네 빵으로 걱정없이 드셨으면 좋겠습니다.
+						</p>
+						<button class="btn-effect">쇼핑하러 가기</button>
+				</div>
+		</section>
+		<!-----------------------------sub-brandstory------------------------------->
+		<section class="tabs_panel">
+				<div class="alter-top">
+						<h1>SUGAR<br/>FREE</h1>
+						<img src="subimg/sugartop.png" alt="에리스리톨">
+						<em>NO설탕? 무엇으로 <br/>단맛을 낼까요?</em>
+						<img src="subimg/leaf.png" alt="나뭇잎">
+						<div><span>Organic</span><span>DELIGHT</span></div>
+						<p>천연감미료의 사용으로 혈당걱정없이<br/>단맛을 느낄 수 있습니다.</p>
+				</div>
+				<div class="alter-boxes">
+						<div class="alter-box1 clicked" data-id="tab1">
+								<div class="alter-img"></div>
+								<div class="alter-name">
+										<span>에리스리톨</span><em>ARISLITOL</em>
+								</div>
+						</div>
+						<div class="alter-box2" data-id="tab2">
+								<div class="alter-img"></div>
+								<div class="alter-name">
+										<span>나한과</span><em>MONCFRUIT</em>
+								</div>
+						</div>
+				</div>
+				<div class="alternatives">
+						<div class="alter1 clicked" id="tab1">
+								<div class="alter-bg">
+										ARISLITOL
+								</div>
+								<div class="alter-desc">
+										<span>에리스리톨</span><em>(Arislitol)</em>
+										<img src="subimg/alterdisc1.png" alt="에리스리톨">
+										<p>에리스리톨은 발효된 과일, 채소에서 추출된 발효액을 여과, 정제,결정화, 수세과정을<br/>
+												거치는 과정을 통해 얻습니다. 감미도가 설탕의 70~80%정도이며, 체내에서 에너지원으로<br/>
+												이용되지 않으며 대부분 배출되어 안전한 설탕 대체재입니다.</p>
+										<h3>에리스리톨만의 특별함</h3>
+										<div class="alter-special">
+												<div class="special1">
+														<img src="subimg/special1-1.png" alt="NonGMO">
+														<span>NON-GMO 인증</span>
+												</div>
+												<div class="special2">
+														<img src="subimg/special1-2.png" alt="0kal">
+														<span>0kal, 누구나 부담없이</span>
+												</div> 
+												<div class="special3">
+														<img src="subimg/special1-3.png" alt="FDA">
+														<span>FDA 인증 감미료</span>
+												</div> 
+												<div class="special4">
+														<img src="subimg/special1-4.png" alt="산뜻한 단맛">
+														<span>산뜻한 단맛</span>
+												</div>    
+										</div>
+										</div>
+						</div>
+						<div class="alter2" id="tab2">
+						<div class="alter-bg alter2-bg">
+								MONCFRUIT
+						</div>
+						<div class="alter-desc alter-desc2">
+								<span>나한과</span><em>(Moncfruit)</em>
+								<img src="subimg/alterdisc2.png" alt="나한과">
+								<p>나한과는 1995년 미국 FDA가 나한과의 주성분인 모그로 사이드를 식품에 사용할 것을<br/>
+								인정했으며 한국 식약처는 식품에 사용 할 수 있는 원료로 1999년에 승인되었고,<br/>
+								또한 2008년 3월 일본 후생성의 인증을 받기도 한 검증된 열매입니다.</p>
+								<h3>나한과만의 특별함</h3>
+								<div class="alter-special alter-special2">
+										<div class="special1">
+												<img src="subimg/special1-1.png" alt="NonGMO">
+												<span>NON-GMO 인증</span>
+										</div>
+										<div class="special2">
+												<img src="subimg/special1-2.png" alt="0kal">
+												<span>GI지수 0</span>
+										</div> 
+										<div class="special3">
+												<img src="subimg/special1-3.png" alt="FDA">
+												<span>FDA 인증 감미료</span>
+										</div> 
+										<div class="special4">
+												<img src="subimg/special1-4.png" alt="산뜻한 단맛">
+												<span>산뜻한 단맛</span>
+										</div>    
+								</div>
+						</div>
+				</div>
+		</div>
+		</section>
+		<!-----------------------------sub-alter1-설탕------------------------------->
+		<section class="tabs_panel">
+				<div class="alter-top almond-top">
+						<h1>GLUTEN<br/>FREE</h1>
+						<img src="subimg/glutentop.png" alt="아몬드가루">
+						<em>NO밀가루? 무엇으로 <br/>빵을 만들죠?</em>
+						<div><span>ALMOND 100%</span><span>아몬드분말</span></div>
+						<p>편도 라고도 불리는 아몬드는 장미과의 낙엽교목으로 매화나무나<br/>
+								복숭아 나무와 가까운 식물입니다. 영양소가 풍부해 2002년 미국의 타임지가<br/>
+								선정한 세계 10대 슈퍼푸드 중 하나 이기도 합니다.</p>
+				</div>
+				<div class="almond-cont">
+						<div class="almond-nut1">
+								<input type="checkbox" id="nut1" name="nut"></input>
+								<label for="nut1">불포화지방산</label>
+								<p>혈관 청소에 도움을 주며 지질 분해에 도움을 줍니다.</p>
+						</div>
+						<div class="almond-nut2">
+								<input type="checkbox" id="nut2" name="nut"></input>
+								<label for="nut2">칼슘 및 철분</label>
+								<p>칼슘의 99%는 골격과 치아 같은 경조직에 존재하고<br/> 나머지 1%는 매우 중요한 생리 작용을 조절하는 영양소입니다.</p>
+						</div>
+						<div class="almond-nut3">
+								<input type="checkbox" id="nut3" name="nut"></input>
+								<label for="nut3">비타민E</label>
+								<p>피부미용에 좋고 치매 중 알츠하이머 예방과 뇌세포의<br/>
+										노폐물 제거와 세포 활성화를 도와주는 영양소입니다.</p>
+						</div>
+						<div class="almond-nut4">
+								<input type="checkbox" id="nut4" name="nut"></input>
+								<label for="nut4">셀레늄</label>
+								<p>건강한 면역체계와 인지 기능을 좋게해주며 인간의<br/>
+										신체과정에 중요한 필수 미네랄입니다.</p>
+						</div>
+						<span>click!</span>
+						<img src="subimg/amondpowder.png" alt="아몬드파우더">
+				</div>
+		</section>
+		<!-----------------------------sub-alter2-밀가루------------------------------->
+	</div>
+	<footer>
+		<div class="container">
+			<img src="../assets/img/footer_logo.png" alt="푸터빵덕로고" />
+			<div class="footer clear">
+				<div class="footer_left">
+					<div class="phone">
+						<h3>문의전화</h3>
+						<p>070-0594-6566</p>
+					</div>
+					<div class="shop_menu">
+						<h3>SHOP MENU</h3>
+						<a href="faq.html" class="txt"
+							>자주묻는질문<span class="bar"></span
+						></a>
+						<a href="board.html" class="txt"
+							>공지사항<span class="bar"></span
+						></a>
+						<a href="customer_center.html" class="txt">고객의소리</a
+						><br /><br />
+						<p class="txt">통신판매업신고 : 제 2020-서울강남-00096호</p>
+						<p class="txt">사업자 등록번호 : 211-87-844424</p>
+						<br />
+						<p>
+							<a href="join-agree.html" class="txt"><b>개인정보처리방침</b></a>
+						</p>
+					</div>
+				</div>
+				<div class="footer_center">
+					<div class="bank">
+						<h3>BANK INFO</h3>
+						<p class="txt">우리은행<span class="bar"></span>1002-450-904652</p>
+						<p class="txt">예금주<span class="bar"></span>주식회사빵덕이네</p>
+					</div>
+					<div class="order_tracking">
+						<h3>ORDER TRACKING</h3>
+						<p class="txt">우체국택배(TEL:1588-4040)</p>
+						<p class="txt tracking">
+							(배송정보는 해당 택배사를 통해 조회가 가능하십니다.)
+						</p>
+					</div>
+				</div>
+				<div class="footer_right">
+					<div class="place">
+						<h3>위치</h3>
+						<p>서울시 동작구 동작대로 28바길 10</p>
+					</div>
+					<div class="sns">
+						<h3>SNS</h3>
+						<p>
+							<a href="details.html" title="facebook"
+								><i class="fab fa-facebook-f"></i
+							></a>
+							<a href="" title="instagram"><i class="fab fa-instagram"></i></a>
+							<a href="details.html" title="twitter"
+								><i class="fab fa-twitter"></i
+							></a>
+						</p>
+					</div>
+					<div class="copyright">
+						<p>COPYRIGHT © 2020 BBANGDUCK<br />ALL RIGHTS RESERVED.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="No sugar No gruten, Ketojenic Bakery" />
+    <meta name="author" content="Ji hyeon" />
+    <title>케이크 예약 - BBANGDUCK's Bakery</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../assets/img/pickicon.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/sub.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/86f00f2bf6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="../assets/js/common.js" defer></script>
+    <script src="../assets/js/sub.js" defer></script>
+  </head>
+</html>
+<body>
+  <header>
+    <!-- 최상단 배너 -->
+    <div class="topline">
+      <a href="#">
+        신규가입시 적립금 1000원, 30000원이상 구매 시 무료 배송 >
+      </a>
+      <div class="container">
+        <a href="#" class="btn_close icon">레이어 닫기</a>
+      </div>
+    </div>
+    <div class="container">
+      <!-- 사이드바 -->
+      <div class="side-menu">
+        <input type="checkbox" id="hamburger" />
+        <label for="hamburger" class="ir_pm hamburgerLabel">
+          햄버거버튼
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="sidebar clear">
+          <div class="sidebar_user">
+            <button onclick="location.href='login.html'">로그인</button
+            ><button onclick="location.href='join-agree.html'">회원가입</button>
+          </div>
+          <ul class="mobile_menu_list">
+            <li>
+              <a href="brandstory.html"><span></span>빵덕이네 이야기</a>
+            </li>
+            <li class="hasTwoDepth">
+              <a href="#"><span></span>메뉴</a>
+              <ul class="two_depth">
+                <li><a href="menu-bread.html">빵</a></li>
+                <li><a href="menu-cookie.html">쿠키</a></li>
+                <li><a href="menu-cake.html">케이크</a></li>
+              </ul>
+            </li>
+            <li class="hasTwoDepth">
+              <a href="#"><span></span>이벤트</a>
+              <ul class="two_depth">
+                <li><a href="event.html">진행중 이벤트</a></li>
+                <li><a href="event-end.html">마감된 이벤트</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="recommend.html"><span></span>맞춤추천</a>
+            </li>
+            <li>
+              <a href="#"><span></span>케이크 예약</a>
+              <ul class="two_depth">
+                <li>
+                  <a href="cake-reservation.html">케이크 예약안내</a>
+                </li>
+                <li><a href="cake-form.html">예약폼 작성</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="review.html"><span></span>구매후기</a>
+            </li>
+            <li class="hasTwoDepth">
+              <a href="#"><span></span>고객센터</a>
+              <ul class="two_depth">
+                <li>
+                  <a href="faq.html">자주묻는질문</a>
+                </li>
+                <li>
+                  <a href="customer_center.html">고객의 소리</a>
+                </li>
+                <li>
+                  <a href="board.html">공지사항</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="sidebar_footer">
+            <span class="sidebar_footer_logo"></span>
+            <div class="sidebar_footer_desc">
+              <div class="phone">
+                <h3>문의전화</h3>
+                <div class="phone_number">070-0594-6566</div>
+              </div>
+              <div class="bank">
+                <h3>BANK INFO</h3>
+                <div class="txt">우리은행 | 1002-450-904652</div>
+                <div class="txt">예금주<span>| 주식회사빵덕이네</span></div>
+              </div>
+              <div class="about">
+                <h3>ABOUT US</h3>
+                <div class="txt">㈜ 빵덕</div>
+                <div class="txt">대표 : 김지현</div>
+                <div class="txt">E-mail : wlgus6566@naver.com</div>
+                <div class="txt">
+                  주소: 서울시 동작구 동작대로 29바길 10 빵덕이네
+                </div>
+              </div>
+            </div>
+          </div>
+          <label for="hamburger"></label>
+        </div>
+        <!-- 사이드바 외 영역 -->
+        <label for="hamburger" class="background"></label>
+      </div>
+      <!-- 네비게이션 바 -->
+      <nav>
+        <h1>
+          <a href="../index.html" class="logo ir_pm">빵덕로고</a>
+        </h1>
+        <ul class="nav_left">
+          <li>
+            <a href="login.html" class="login ir_pm">로그인 아이콘</a>
+          </li>
+          <li class="two_depth">
+            <a href="brandstory.html">빵덕이네 이야기</a>
+            <ul>
+              <li><a href="brandstory.html">브랜드스토리</a></li>
+            </ul>
+          </li>
+          <li class="two_depth">
+            <a href="menu-bread.html">메뉴</a>
+            <ul>
+              <li><a href="menu-bread.html">빵</a></li>
+              <li><a href="menu-cookie.html">쿠키</a></li>
+              <li><a href="menu-cake.html">케이크</a></li>
+            </ul>
+          </li>
+          <li class="two_depth">
+            <a href="event.html">이벤트</a>
+            <ul>
+              <li><a href="event.html">진행중 이벤트</a></li>
+              <li><a href="event-end.html">마감된 이벤트</a></li>
+            </ul>
+          </li>
+          <li class="two_depth">
+            <a href="recommend.html">맞춤추천</a>
+            <ul>
+              <li><a href="recommend.html">맞춤추천</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav_right">
+          <li class="two_depth">
+            <a href="cake-reservation.html">케이크 예약</a>
+            <ul>
+              <li><a href="cake-reservation.html">에약안내</a></li>
+              <li><a href="cake-form.html">예약하기</a></li>
+            </ul>
+          </li>
+          <li class="two_depth">
+            <a href="review.html">구매후기</a>
+            <ul>
+              <li><a href="review.html">구매후기</a></li>
+            </ul>
+          </li>
+          <li class="two_depth">
+            <a href="board.html">고객센터</a>
+            <ul>
+              <li><a href="faq.html">자주묻는질문</a></li>
+              <li><a href="customer_center.html">고객의 소리</a></li>
+              <li><a href="board.html">공지사항</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="cart.html" class="shopping" data-cart="4"
+              >장바구니</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!--------header------>
+    <section id="sub_banner">
+        <div class="sub_banner">
+          <div class="sub_banner_bg event_banner_bg ir_pm">케이크 예약페이지 배경</div>
+          <div class="sub_banner_tit">
+            <h2>CAKE RESERVATION</h2>
+          </div>
+          <ul class="depth2">
+            <li><a href="cake-reservation.html">예약안내</a></li>
+            <li><a href="cake-form.html" class="active">예약하기</a></li>
+          </ul>
+        </div>
+    </section>
+    <!-----------------------------sub banner------------------------------->
+  <div id="sub_container">
+    <div class="sub_inner">
+      <h2 class="sub_tit">
+          케이크 예약 폼 작성
+      </h2>
+      <div class="agree">
+          <h3>개인정보 취급 방침</h3>
+          <div tabindex="0">
+            <p class="ls2 lh6 bs5 ts4"><em class="emphasis"><빵덕이네 베이커리>('http://wlgus6566.dothome.co.kr/bbangduck/index.htm'이하  '빵덕이네 베이커리')</em>은(는) 개인정보보호법에 따라 이용자의 개인정보 보호 및 권익을 보호하고 개인정보와 관련한 이용자의 고충을 원활하게 처리할 수 있도록 다음과 같은 처리방침을 두고 있습니다.</p><p class="ls2 lh6 bs5 ts4"><em class="emphasis"><빵덕이네 베이커리>('빵덕이네 베이커리')</em> 은(는) 회사는 개인정보처리방침을 개정하는 경우 웹사이트 공지사항(또는 개별공지)을 통하여 공지할 것입니다.</p><p class="ls2">○ 본 방침은부터 <em class="emphasis">2020</em>년 <em class="emphasis">1</em>월 <em class="emphasis">1</em>일부터 시행됩니다.</p></br><p class='lh6 bs4'><strong>1. 개인정보의 처리 목적 <em class="emphasis"><빵덕이네 베이커리>('http://wlgus6566.dothome.co.kr/bbangduck/index.htm'이하  '빵덕이네 베이커리')</em>은(는) 개인정보를 다음의 목적을 위해 처리합니다. 처리한 개인정보는 다음의 목적이외의 용도로는 사용되지 않으며 이용 목적이 변경될 시에는 사전동의를 구할 예정입니다.</strong></p><p class="ls2">가. 홈페이지 회원가입 및 관리</p><p class="ls2">회원 가입의사 확인, 회원제 서비스 제공에 따른 본인 식별·인증, 회원자격 유지·관리 등을 목적으로 개인정보를 처리합니다.</p></br></br></br><p class='lh6 bs4'><strong>2. 개인정보 파일 현황</br>('http://wlgus6566.dothome.co.kr/bbangduck/index.htm'이하  '빵덕이네 베이커리')가 개인정보 보호법 제32조에 따라 등록․공개하는 개인정보파일의 처리목적은 다음과 같습니다.</strong></p><p class='ls2'>1. 개인정보 파일명 : 빵덕이네</br> - 개인정보 항목 : 이메일, 휴대전화번호, 이름, 결제기록</br> - 수집방법 : 홈페이지, 서면양식</br> - 보유근거 : 예약 정보 기록</br>  - 보유기간 : 3년</br>  - 관련법령 : 소비자의 불만 또는 분쟁처리에 관한 기록 : 3년</p></br></br>※ 기타('http://wlgus6566.dothome.co.kr/bbangduck/index.htm'이하  '빵덕이네 베이커리')의 개인정보파일 등록사항 공개는 행정안전부 개인정보보호 종합지원 포털(www.privacy.go.kr) → 개인정보민원 → 개인정보열람등 요구 → 개인정보파일 목록검색 메뉴를 활용해주시기 바랍니다.</br></br><p class='lh6 bs4'><strong>3. 개인정보의 처리 및 보유 기간</strong></br></br>① <em class="emphasis"><빵덕이네 베이커리>('빵덕이네 베이커리')</em>은(는) 법령에 따른 개인정보 보유·이용기간 또는 정보주체로부터 개인정보를 수집시에 동의 받은 개인정보 보유,이용기간 내에서 개인정보를 처리,보유합니다.</br></br>② 각각의 개인정보 처리 및 보유 기간은 다음과 같습니다.</p>1.<홈페이지 회원가입 및 관리></br><홈페이지 회원가입 및 관리>와 관련한 개인정보는 수집.이용에 관한 동의일로부터<3년>까지 위 이용목적을 위하여 보유.이용됩니다.</br>-보유근거 : 예약 정보 기록</br>-관련법령 : 신용정보의 수집/처리 및 이용 등에 관한 기록 : 3년</br>-예외사유 : 없음</br></br>
+            <p class="lh6 bs4"><strong>4. 정보주체와 법정대리인의 권리·의무 및 그 행사방법 이용자는 개인정보주체로써 다음과 같은 권리를 행사할 수 있습니다.</strong></p><p class="ls2">① 정보주체는 빵덕이네 베이커리에 대해 언제든지 개인정보 열람,정정,삭제,처리정지 요구 등의 권리를 행사할 수 있습니다.</br>② 제1항에 따른 권리 행사는빵덕이네 베이커리에 대해 개인정보 보호법 시행령 제41조제1항에 따라 서면, 전자우편, 모사전송(FAX) 등을 통하여 하실 수 있으며 빵덕이네 베이커리은(는) 이에 대해 지체 없이 조치하겠습니다.</br>③ 제1항에 따른 권리 행사는 정보주체의 법정대리인이나 위임을 받은 자 등 대리인을 통하여 하실 수 있습니다. 이 경우 개인정보 보호법 시행규칙 별지 제11호 서식에 따른 위임장을 제출하셔야 합니다.</br>④ 개인정보 열람 및 처리정지 요구는 개인정보보호법 제35조 제5항, 제37조 제2항에 의하여 정보주체의 권리가 제한 될 수 있습니다.</br>⑤ 개인정보의 정정 및 삭제 요구는 다른 법령에서 그 개인정보가 수집 대상으로 명시되어 있는 경우에는 그 삭제를 요구할 수 없습니다.</br>⑥ 빵덕이네 베이커리은(는) 정보주체 권리에 따른 열람의 요구, 정정·삭제의 요구, 처리정지의 요구 시 열람 등 요구를 한 자가 본인이거나 정당한 대리인인지를 확인합니다.</p></br></br><p class='lh6 bs4'><strong>5. 처리하는 개인정보의 항목 작성 </strong></br></br> ① <em class="emphasis"><빵덕이네 베이커리>('http://wlgus6566.dothome.co.kr/bbangduck/index.htm'이하  '빵덕이네 베이커리')</em>은(는) 다음의 개인정보 항목을 처리하고 있습니다.</p><p class='ls2'>1<홈페이지 회원가입 및 관리></br>- 필수항목 : 이메일, 휴대전화번호, 자택주소, 로그인ID, 이름, 결제기록</br>- 선택항목 : 이메일, 휴대전화번호, 로그인ID, 이름, 결제기록</p></br></br></br><p class='lh6 bs4'><strong>6. 개인정보의 파기<em class="emphasis"><빵덕이네 베이커리>('빵덕이네 베이커리')</em>은(는) 원칙적으로 개인정보 처리목적이 달성된 경우에는 지체없이 해당 개인정보를 파기합니다. 파기의 절차, 기한 및 방법은 다음과 같습니다.</strong></p><p class='ls2'>-파기절차</br>이용자가 입력한 정보는 목적 달성 후 별도의 DB에 옮겨져(종이의 경우 별도의 서류) 내부 방침 및 기타 관련 법령에 따라 일정기간 저장된 후 혹은 즉시 파기됩니다. 이 때, DB로 옮겨진 개인정보는 법률에 의한 경우가 아니고서는 다른 목적으로 이용되지 않습니다.</br></br>-파기기한</br>이용자의 개인정보는 개인정보의 보유기간이 경과된 경우에는 보유기간의 종료일로부터 5일 이내에, 개인정보의 처리 목적 달성, 해당 서비스의 폐지, 사업의 종료 등 그 개인정보가 불필요하게 되었을 때에는 개인정보의 처리가 불필요한 것으로 인정되는 날로부터 5일 이내에 그 개인정보를 파기합니다.</p><p class='ls2'>-파기방법</br>전자적 파일 형태의 정보는 기록을 재생할 수 없는 기술적 방법을 사용합니다.</br>종이에 출력된 개인정보는 분쇄기로 분쇄하거나 소각을 통하여 파기합니다.</p></br></br><p class="lh6 bs4"><strong>7. 개인정보 자동 수집 장치의 설치•운영 및 거부에 관한 사항</strong></p><p class="ls2">① 빵덕이네 베이커리 은 개별적인 맞춤서비스를 제공하기 위해 이용정보를 저장하고 수시로 불러오는 ‘쿠기(cookie)’를 사용합니다.
+            ② 쿠키는 웹사이트를 운영하는데 이용되는 서버(http)가 이용자의 컴퓨터 브라우저에게 보내는 소량의 정보이며 이용자들의 PC 컴퓨터내의 하드디스크에 저장되기도 합니다.
+            가. 쿠키의 사용 목적 : 이용자가 방문한 각 서비스와 웹 사이트들에 대한 방문 및 이용형태, 인기 검색어, 보안접속 여부, 등을 파악하여 이용자에게 최적화된 정보 제공을 위해 사용됩니다.
+            나. 쿠키의 설치•운영 및 거부 : 웹브라우저 상단의 도구>인터넷 옵션>개인정보 메뉴의 옵션 설정을 통해 쿠키 저장을 거부 할 수 있습니다.
+            다. 쿠키 저장을 거부할 경우 맞춤형 서비스 이용에 어려움이 발생할 수 있습니다.</br></br><p class='lh6 bs4'><strong>8. 개인정보 보호책임자 작성 </strong></p><br/> ①  빵덕이네 베이커리(‘http://wlgus6566.dothome.co.kr/bbangduck/index.htm’이하 ‘빵덕이네 베이커리) 은(는) 개인정보 처리에 관한 업무를 총괄해서 책임지고, 개인정보 처리와 관련한 정보주체의 불만처리 및 피해구제 등을 위하여 아래와 같이 개인정보 보호책임자를 지정하고 있습니다.<p class='ls2'><br/>▶ 개인정보 보호책임자 <br/>성명 :김지현<br/>직책 :대표<br/>직급 :대표<br/>연락처 :010-5578-6566, wlgus6566@naver.com, 02-594-6566<br/>※ 개인정보 보호 담당부서로 연결됩니다.<br/> <br/>▶ 개인정보 보호 담당부서<br/>부서명 :영업팀<br/>담당자 :김지현<br/>연락처 :01055786566, wlgus6566@naver.com, 02-594-6566<br/>② 정보주체께서는 빵덕이네 베이커리(‘http://wlgus6566.dothome.co.kr/bbangduck/index.htm’이하 ‘빵덕이네 베이커리) 의 서비스(또는 사업)을 이용하시면서 발생한 모든 개인정보 보호 관련 문의, 불만처리, 피해구제 등에 관한 사항을 개인정보 보호책임자 및 담당부서로 문의하실 수 있습니다. 빵덕이네 베이커리(‘http://wlgus6566.dothome.co.kr/bbangduck/index.htm’이하 ‘빵덕이네 베이커리) 은(는) 정보주체의 문의에 대해 지체 없이 답변 및 처리해드릴 것입니다.</p></br></br><p class='lh6 bs4'><strong>9. 개인정보 처리방침 변경 </strong></p><p>①이 개인정보처리방침은 시행일로부터 적용되며, 법령 및 방침에 따른 변경내용의 추가, 삭제 및 정정이 있는 경우에는 변경사항의 시행 7일 전부터 공지사항을 통하여 고지할 것입니다.</p></br></br><p class='lh6 bs4'><strong>10. 개인정보의 안전성 확보 조치 <em class="emphasis"><빵덕이네 베이커리>('빵덕이네 베이커리')</em>은(는) 개인정보보호법 제29조에 따라 다음과 같이 안전성 확보에 필요한 기술적/관리적 및 물리적 조치를 하고 있습니다.</strong></p><p class='ls2'>1. 정기적인 자체 감사 실시</br> 개인정보 취급 관련 안정성 확보를 위해 정기적(분기 1회)으로 자체 감사를 실시하고 있습니다.</br></br></p></p>
+        </div>
+        <p><input type="checkbox" id="agree"><label for="agree">약관에 동의합니다.</label></p>
+      </div>
+      <form class="step">
+        <fieldset class="step1">
+          <legend>케이크 선택</legend>
+          <h3><span>STEP1</span> 케이크 선택</h3>
+          <div class="step1-boxes">
+            <div class="step1box">
+              <div class="img">
+                <img src="../story/subimg/reserve-left1.png" alt="">
+              </div>
+              <div class="cakename">
+                <div class="name-left"><input type="checkbox" id='cake1'><label for="cake1">당근 케이크</label></div>
+                <div class="name-right"><input type="number" id='number1' min="0" ><label for="number1">개</label></div>
+              </div>
+            </div>
+            <div class="step1box">
+              <div class="img">
+                <img src="../story/subimg/reserve-left2.png" alt="">
+              </div>
+              <div class="cakename">
+                <div class="name-left"><input type="checkbox" id='cake2'><label for="cake2">레드벨벳 케이크</label></div>
+                <div class="name-right"><input type="number" id='number2' min="0" ><label for="number2">개</label></div>
+              </div>
+            </div>
+            <div class="step1box">
+              <div class="img">
+                <img src="../story/subimg/reserve-left3.png" alt="">
+              </div>
+              <div class="cakename">
+                <div class="name-left"><input type="checkbox" id='cake3'><label for="cake3">크림치즈 케이크</label></div>
+                <div class="name-right"><input type="number" id='number3' min="0" ><label for="number3">개</label></div>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="step2">
+          <legend>예약정보 작성</legend>
+          <h3><span>STEP2</span> 예약 정보 작성</h3>
+          <div class="reservation-field">
+            <label for="clientName">이름:</label>
+            <input
+              type="text"
+              id="clientName"
+              class="plain-text"
+              placeholder="이름을 적어주세요"
+            />
+          </div>
+          <div class="reservation-field">
+            <label for="clientEmail_id">이메일:</label>
+            <input
+              type="text"
+              id="clientEmail_id"
+              class="plain-text"
+              value=""placeholder="abc1234"
+
+            />
+            <span> @ </span>
+            <input type="text" class="clientEmail_domain" value="naver.com">
+            <select class="select_domain">
+              <option value="naver.com">naver</option>
+              <option value="daum.net">daum</option>
+              <option value="gmail.com">gmail</option>
+              <option value="yahoo.com">yahoo</option>
+              <option value="">직접입력</option>
+            </select>
+          </div>
+          <div class="reservation-field">
+            <label for="clientPhone">핸드폰 번호:</label>
+            <input
+              type="text"
+              id="clientPhone"
+              class="plain-text"
+              placeholder="XXX-XXXX-XXXX"
+            />
+          </div>
+          <div class="reservation-field">
+            <label for="clientPhone">픽업 날짜:</label>
+            <input
+              type="date"
+            />
+          </div>
+          <div class="reservation-field">
+            <label for="projectDesc">기타 요청사항:</label>
+            <textarea
+              name=""
+              id="request"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+        </fieldset>
+        <div class="submit_btn">
+           <button type="submit" class="normal_btn submit_btn">제출하기</button>
+        </div>
+      </form>                 
+    </div>
+  </div>  
+     <!--------sub-cake-reserve--------->      
+  <footer>
+    <div class="container">
+      <img src="../assets/img/footer_logo.png" alt="푸터빵덕로고" />
+      <div class="footer clear">
+        <div class="footer_left">
+          <div class="phone">
+            <h3>문의전화</h3>
+            <p>070-0594-6566</p>
+          </div>
+          <div class="shop_menu">
+            <h3>SHOP MENU</h3>
+            <a href="faq.html" class="txt"
+              >자주묻는질문<span class="bar"></span
+            ></a>
+            <a href="board.html" class="txt"
+              >공지사항<span class="bar"></span
+            ></a>
+            <a href="customer_center.html" class="txt">고객의소리</a
+            ><br /><br />
+            <p class="txt">통신판매업신고 : 제 2020-서울강남-00096호</p>
+            <p class="txt">사업자 등록번호 : 211-87-844424</p>
+            <br />
+            <p>
+              <a href="join-agree.html" class="txt"><b>개인정보처리방침</b></a>
+            </p>
+          </div>
+        </div>
+        <div class="footer_center">
+          <div class="bank">
+            <h3>BANK INFO</h3>
+            <p class="txt">우리은행<span class="bar"></span>1002-450-904652</p>
+            <p class="txt">예금주<span class="bar"></span>주식회사빵덕이네</p>
+          </div>
+          <div class="order_tracking">
+            <h3>ORDER TRACKING</h3>
+            <p class="txt">우체국택배(TEL:1588-4040)</p>
+            <p class="txt tracking">
+              (배송정보는 해당 택배사를 통해 조회가 가능하십니다.)
+            </p>
+          </div>
+        </div>
+        <div class="footer_right">
+          <div class="place">
+            <h3>위치</h3>
+            <p>서울시 동작구 동작대로 28바길 10</p>
+          </div>
+          <div class="sns">
+            <h3>SNS</h3>
+            <p>
+              <a href="details.html" title="facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="" title="instagram"><i class="fab fa-instagram"></i></a>
+              <a href="details.html" title="twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </p>
+          </div>
+          <div class="copyright">
+            <p>COPYRIGHT © 2020 BBANGDUCK<br />ALL RIGHTS RESERVED.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+

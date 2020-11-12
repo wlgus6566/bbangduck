@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="No sugar No gruten, Ketojenic Bakery" />
+    <meta name="author" content="Ji hyeon" />
+    <title>맞춤추천 - BBANGDUCK's Bakery</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../assets/img/pickicon.png"
+    />
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/sub.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/86f00f2bf6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../assets/js/retina.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="../assets/js/common.js" defer></script>
+    <script src="../assets/js/sub.js" defer></script>
+  </head>
+</html>
+<body>
+  <header>
+    <!-- 최상단 배너 -->
+    <div class="topline">
+      <a href="#">
+        신규가입시 적립금 1000원, 30000원이상 구매 시 무료 배송 >
+      </a>
+      <div class="container">
+        <a href="#" class="btn_close icon">레이어 닫기</a>
+      </div>
+    </div>
+    <div class="container">
+      <!-- 사이드바 -->
+      <div class="side-menu">
+        <input type="checkbox" id="hamburger" />
+        <label for="hamburger" class="ir_pm hamburgerLabel">
+          햄버거버튼
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="sidebar clear">
+          <div class="sidebar_user">
+            <button onclick="location.href='login.html'">로그인</button
+            ><button onclick="location.href='join-agree.html'">회원가입</button>
+          </div>
+          <ul class="mobile_menu_list">
+            <li>
+              <a href="brandstory.html"><span></span>빵덕이네 이야기</a>
+            </li>
+            <li class="hasTwoDepth">
+              <a href="#"><span></span>메뉴</a>
+              <ul class="two_depth">
+                <li><a href="menu-bread.html">빵</a></li>
+                <li><a href="menu-cookie.html">쿠키</a></li>
+                <li><a href="menu-cake.html">케이크</a></li>
+              </ul>
+            </li>
+            <li class="hasTwoDepth">
+              <a href="#"><span></span>이벤트</a>
+              <ul class="two_depth">
+                <li><a href="event.html">진행중 이벤트</a></li>
+                <li><a href="event-end.html">마감된 이벤트</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="recommend.html"><span></span>맞춤추천</a>
+            </li>
+            <li>
+              <a href="#"><span></span>케이크 예약</a>
+              <ul class="two_depth">
+                <li>
+                  <a href="cake-reservation.html">케이크 예약안내</a>
+                </li>
+                <li><a href="cake-form.html">예약폼 작성</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="review.html"><span></span>구매후기</a>
+            </li>
+            <li class="hasTwoDepth">
+              <a href="#"><span></span>고객센터</a>
+              <ul class="two_depth">
+                <li>
+                  <a href="faq.html">자주묻는질문</a>
+                </li>
+                <li>
+                  <a href="customer_center.html">고객의 소리</a>
+                </li>
+                <li>
+                  <a href="board.html">공지사항</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="sidebar_footer">
+            <span class="sidebar_footer_logo"></span>
+            <div class="sidebar_footer_desc">
+              <div class="phone">
+                <h3>문의전화</h3>
+                <div class="phone_number">070-0594-6566</div>
+              </div>
+              <div class="bank">
+                <h3>BANK INFO</h3>
+                <div class="txt">우리은행 | 1002-450-904652</div>
+                <div class="txt">예금주<span>| 주식회사빵덕이네</span></div>
+              </div>
+              <div class="about">
+                <h3>ABOUT US</h3>
+                <div class="txt">㈜ 빵덕</div>
+                <div class="txt">대표 : 김지현</div>
+                <div class="txt">E-mail : wlgus6566@naver.com</div>
+                <div class="txt">
+                  주소: 서울시 동작구 동작대로 29바길 10 빵덕이네
+                </div>
+              </div>
+            </div>
+          </div>
+          <label for="hamburger"></label>
+        </div>
+        <!-- 사이드바 외 영역 -->
+        <label for="hamburger" class="background"></label>
+      </div>
+      <!-- 네비게이션 바 -->
+      <nav>
+        <h1>
+          <a href="../index.html" class="logo ir_pm">빵덕로고</a>
+        </h1>
+        <ul class="nav_left">
+          <li>
+            <a href="login.html" class="login ir_pm">로그인 아이콘</a>
+          </li>
+          <li class="two_depth">
+            <a href="brandstory.html">빵덕이네 이야기</a>
+            <ul>
+              <li><a href="brandstory.html">브랜드스토리</a></li>
+            </ul>
+          </li>
+          <li class="two_depth">
+            <a href="menu-bread.html">메뉴</a>
+            <ul>
+              <li><a href="menu-bread.html">빵</a></li>
+              <li><a href="menu-cookie.html">쿠키</a></li>
+              <li><a href="menu-cake.html">케이크</a></li>
+            </ul>
+          </li>
+          <li class="two_depth">
+            <a href="event.html">이벤트</a>
+            <ul>
+              <li><a href="event.html">진행중 이벤트</a></li>
+              <li><a href="event-end.html">마감된 이벤트</a></li>
+            </ul>
+          </li>
+          <li class="two_depth">
+            <a href="recommend.html">맞춤추천</a>
+            <ul>
+              <li><a href="recommend.html">맞춤추천</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav_right">
+          <li class="two_depth">
+            <a href="cake-reservation.html">케이크 예약</a>
+            <ul>
+              <li><a href="cake-reservation.html">에약안내</a></li>
+              <li><a href="cake-form.html">예약하기</a></li>
+            </ul>
+          </li>
+          <li class="two_depth">
+            <a href="review.html">구매후기</a>
+            <ul>
+              <li><a href="review.html">구매후기</a></li>
+            </ul>
+          </li>
+          <li class="two_depth">
+            <a href="board.html">고객센터</a>
+            <ul>
+              <li><a href="faq.html">자주묻는질문</a></li>
+              <li><a href="customer_center.html">고객의 소리</a></li>
+              <li><a href="board.html">공지사항</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="cart.html" class="shopping" data-cart="4"
+              >장바구니</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!--------header------>
+  <a href="#" class="gototop">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+  <!-- gototop버튼 -->
+  <section id="sub_banner">
+    <div class="sub_banner">
+      <div class="sub_banner_bg recommend_banner_bg ir_pm">맞춤추천 배경</div>
+      <div class="sub_banner_tit">
+        <h2>RECOMMENDATION</h2>
+      </div>
+      <ul class="depth2">
+        <li><a href="customer_center.html" class="active">맞춤추천</a></li>
+      </ul>
+    </div>
+  </section>
+    <div id="sub_container">
+      <div class="sub_inner rec_inner">
+        <div class="rec_step">
+          <div class="choice1">
+            <h3 class="choice_tit"><img src="../story/subimg/finger.png" alt="finger">STEP 01. 상황선택</h3>
+            <ul class="choice1_box">
+              <li>
+                <a href="#">
+                  <div class="box_img">
+                    <img src="../story/subimg/rec_step1-1.jpg" alt="식사대용">
+                  </div>
+                  <p>식사대용</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="box_img">
+                    <img src="../story/subimg/rec_step1-2.jpg" alt="간식용">
+                  </div>
+                  <p>간식용</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="box_img">
+                    <img src="../story/subimg/rec_step1-3.jpg" alt="선물용">
+                  </div>
+                  <p>선물용</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="choice2">
+            <h3 class="choice_tit"><img src="../story/subimg/finger.png" alt="finger">STEP 02. 원하는 당 함유량</h3>
+            <div class="ch_wrap">
+              <a href="#" class="ch_icon">5g 미만</a>
+              <a href="#" class="ch_icon">5g ~ 10g</a>
+              <a href="#" class="ch_icon">10g ~ 20g</a>
+              <a href="#" class="ch_icon">20g ~ 30g</a>
+              <a href="#" class="ch_icon">30g 이상(제한없음)</a>
+            </div>
+          </div> 
+          <div class="choice3">
+            <h3 class="choice_tit"><img src="../story/subimg/finger.png" alt="finger">STEP 03. 알러지체크</h3>
+            <div class="ch_al_wrap">
+              <a href="#" class="ch_al_icon">
+                <div class="al_img">
+                  <img src="../story/subimg/step3-1.png" alt="땅콩">
+                </div>
+                <span class="al_name">땅콩</span>
+                <div class="al_hover">
+                  <span><img src="../story/subimg/check_icon.png" alt="check"></span>
+                  <em>땅콩</em>
+                </div>
+              </a>
+              <a href="#" class="ch_al_icon">
+                <div class="al_img">
+                  <img src="../story/subimg/step3-2.png" alt="캐슈넛">
+                </div>
+                <span class="al_name">캐슈넛</span>
+                <div class="al_hover">
+                  <span><img src="../story/subimg/check_icon.png" alt="check"></span>
+                  <em>캐슈넛</em>
+                </div>
+              </a>
+              <a href="#" class="ch_al_icon">
+                <div class="al_img">
+                  <img src="../story/subimg/step3-3.png" alt="피스타치오">
+                </div>
+                <span class="al_name">피스타치오</span>
+                <div class="al_hover">
+                  <span><img src="../story/subimg/check_icon.png" alt="check"></span>
+                  <em>피스타치오</em>
+                </div>
+              </a>
+              <a href="#" class="ch_al_icon">
+                <div class="al_img">
+                  <img src="../story/subimg/step3-4.png" alt="토마토">
+                </div>
+                <span class="al_name">토마토</span>
+                <div class="al_hover">
+                  <span><img src="../story/subimg/check_icon.png" alt="check"></span>
+                  <em>토마토</em>
+                </div>
+              </a>
+              <a href="#" class="ch_al_icon">
+                <div class="al_img">
+                  <img src="../story/subimg/step3-5.png" alt="건포도">
+                </div>
+                <span class="al_name">건포도</span>
+                <div class="al_hover">
+                  <span><img src="../story/subimg/check_icon.png" alt="check"></span>
+                  <em>건포도</em>
+                </div>
+              </a>
+              <a href="#" class="ch_al_icon">
+                <div class="al_img">
+                  <img src="../story/subimg/step3-6.png" alt="팥">
+                </div>
+                <span class="al_name">팥</span>
+                <div class="al_hover">
+                  <span><img src="../story/subimg/check_icon.png" alt="check"></span>
+                  <em>팥</em>
+                </div>
+              </a>
+              <a href="#" class="ch_al_icon">
+                <div class="al_img">
+                  <img src="../story/subimg/step3-7.png" alt="복숭아">
+                </div>
+                <span class="al_name">복숭아</span>
+                <div class="al_hover">
+                  <span><img src="../story/subimg/check_icon.png" alt="check"></span>
+                  <em>복숭아</em>
+                </div>
+              </a>
+              <a href="#" class="ch_al_icon">
+                <div class="al_img">
+                  <img src="../story/subimg/step3-8.png" alt="호두">
+                </div>
+                <span class="al_name">호두</span>
+                <div class="al_hover">
+                  <span><img src="../story/subimg/check_icon.png" alt="check"></span>
+                  <em>호두</em>
+                </div>
+              </a>
+              <a href="#" class="ch_al_icon no_aly">
+                <div class="al_img">
+                  <img src="../story/subimg/check_icon_orange.png" alt="check">
+                </div>
+                <span class="al_name">없음</span>
+                <div class="al_hover">
+                  <span><img src="../story/subimg/check_icon.png" alt="check"></span>
+                  <em>없음</em>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="choice4">
+            <h3 class="choice_tit"><img src="../story/subimg/finger.png" alt="finger">STEP 04. 취향 선택</h3>
+            <p>(2가지 이상 선택해주세요.)</p>
+            <div class="ch_wrap">
+              <a href="#" class="ch_icon" data-class="01">달달한</a>
+              <a href="#" class="ch_icon" data-class="02">쫄깃한</a>
+              <a href="#" class="ch_icon" data-class="03">담백한</a>
+              <a href="#" class="ch_icon" data-class="04">부드러운</a>
+              <a href="#" class="ch_icon" data-class="05">바삭한</a>
+              <a href="#" class="ch_icon" data-class="06">고소한</a>
+              <a href="#" class="ch_icon" data-class="07">할매입맛의</a>
+              <a href="#" class="ch_icon" data-class="08">아이입맛의</a>
+              <a href="#" class="ch_icon" data-class="09">고급진</a>
+              <a href="#" class="ch_icon" data-class="10">깔끔한</a>
+              <a href="#" class="ch_icon" data-class="11">담백한</a>
+              <a href="#" class="ch_icon" data-class="12">곡물맛의</a>
+              <a href="#" class="ch_icon" data-class="13">짭짤한</a>
+            </div>
+            <div class="preference">
+              <p>나는</p>
+              <p class="prefered">
+                <span class='01'>달달한</span>
+                <span class='02'>쫄깃한</span>
+                <span class='03'>담백한</span>
+                <span class='04'>부드러운</span>
+                <span class='05'>바삭한</span>
+                <span class='06'>고소한</span>
+                <span class='07'>할매입맛의</span>
+                <span class='08'>아이입맛의</span>
+                <span class='09'>고급진</span>
+                <span class='10'>깔끔한</span>
+                <span class='11'>담백한</span>
+                <span class='12'>곡물맛의</span>
+                <span class='13'>짭짤한</span>
+              </p>
+              <p>맛을 선호한다.</p>
+            </div>
+          </div> 
+          <div class="result_btn">
+            <a href="#" class="normal_btn gray init_btn">초기화</a>
+            <a href="#" class="normal_btn result_btn">결과 보기</a>
+          </div>
+          <section class="recommend_result">
+            <div class="tit">
+              <h3 class="heading2">빵덕's PICK</h3>
+              <span class="tit_desc">추천결과입니다!</span>
+            </div>
+            <ul class="r_result">
+              <li>
+                <a href="details.html">
+                  <img src="../assets/img/pick1.jpg" alt="카스테라" />
+                  <div class="info">
+                    <strong>카스테라</strong>
+                    <span class="icon star star5"></span>
+                    <p class="price">3,500원</p>
+                    <p>
+                      #저탄고지다이어트 #건강빵 #키토제닉 #키토빵 #다이어트빵
+                      #ketojenic #diet #빵덕이네베이커리 #다이어트 #저탄고지
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="details.html">
+                  <img src="../assets/img/pick2.jpg" alt="당근컵케이크"/>
+                  <div class="info">
+                    <strong>당근컵케이크</strong>
+                    <span class="icon star star5"></span>
+                    <p class="price">4,700원</p>
+                    <p>
+                      #키토빵 #다이어트빵 #ketojenic #diet #빵덕이네베이커리
+                      #다이어트 #저탄고지
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="details.html">
+                  <img src="../assets/img/pick3.jpg" alt="마가렛스콘"/>
+                  <div class="info">
+                    <strong>마가렛스콘</strong>
+                    <span class="icon star star_4half"></span>
+                    <p class="price">3,500원</p>
+                    <p>
+                      #마가렛스콘 #키토제닉 #키토빵 #다이어트빵 #ketojenic #diet
+                      #빵덕이네베이커리 #다이어트 #저탄고지
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="details.html">
+                  <img src="../assets/img/pick4.jpg" alt="요거트 치즈 케이크"/>
+                  <div class="info">
+                    <strong>요거트 치즈 케이크</strong>
+                    <span class="icon star star_4half"></span>
+                    <p class="price">4,700원</p>
+                    <p>
+                      #저탄수화물 #케이크 #다이어트빵 #ketojenic #diet
+                      #빵덕이네베이커리 #다이어트 #저탄고지
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <p class="more_view">
+              <a href="menu-bread.html">쇼핑하러 가기 <span>&#8640;</span></a>
+            </p>
+          </section>
+      </div>
+    </div>
+  <!-----sub_container----->      
+  <footer>
+    <div class="container">
+      <img src="../assets/img/footer_logo.png" alt="푸터빵덕로고" />
+      <div class="footer clear">
+        <div class="footer_left">
+          <div class="phone">
+            <h3>문의전화</h3>
+            <p>070-0594-6566</p>
+          </div>
+          <div class="shop_menu">
+            <h3>SHOP MENU</h3>
+            <a href="faq.html" class="txt"
+              >자주묻는질문<span class="bar"></span
+            ></a>
+            <a href="board.html" class="txt"
+              >공지사항<span class="bar"></span
+            ></a>
+            <a href="customer_center.html" class="txt">고객의소리</a
+            ><br /><br />
+            <p class="txt">통신판매업신고 : 제 2020-서울강남-00096호</p>
+            <p class="txt">사업자 등록번호 : 211-87-844424</p>
+            <br />
+            <p>
+              <a href="join-agree.html" class="txt"><b>개인정보처리방침</b></a>
+            </p>
+          </div>
+        </div>
+        <div class="footer_center">
+          <div class="bank">
+            <h3>BANK INFO</h3>
+            <p class="txt">우리은행<span class="bar"></span>1002-450-904652</p>
+            <p class="txt">예금주<span class="bar"></span>주식회사빵덕이네</p>
+          </div>
+          <div class="order_tracking">
+            <h3>ORDER TRACKING</h3>
+            <p class="txt">우체국택배(TEL:1588-4040)</p>
+            <p class="txt tracking">
+              (배송정보는 해당 택배사를 통해 조회가 가능하십니다.)
+            </p>
+          </div>
+        </div>
+        <div class="footer_right">
+          <div class="place">
+            <h3>위치</h3>
+            <p>서울시 동작구 동작대로 28바길 10</p>
+          </div>
+          <div class="sns">
+            <h3>SNS</h3>
+            <p>
+              <a href="details.html" title="facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="" title="instagram"><i class="fab fa-instagram"></i></a>
+              <a href="details.html" title="twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </p>
+          </div>
+          <div class="copyright">
+            <p>COPYRIGHT © 2020 BBANGDUCK<br />ALL RIGHTS RESERVED.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+

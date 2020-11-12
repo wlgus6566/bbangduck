@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="No sugar No gruten, Ketojenic Bakery" />
+    <meta name="author" content="Ji hyeon" />
+    <title>cookie - menu - BBANGDUCK's Bakery</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../assets/img/pickicon.png"
+    />
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/sub.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/86f00f2bf6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="../assets/js/common.js" defer></script>
+    <script src="../assets/js/sub.js" defer></script>
+  </head>
+</html>
+<body>
+  <header>
+    <!-- 최상단 배너 -->
+    <div class="topline">
+      <a href="#">
+        신규가입시 적립금 1000원, 30000원이상 구매 시 무료 배송 >
+      </a>
+      <div class="container">
+        <a href="#" class="btn_close icon">레이어 닫기</a>
+      </div>
+    </div>
+    <div class="container">
+      <!-- 사이드바 -->
+      <div class="side-menu">
+        <input type="checkbox" id="hamburger" />
+        <label for="hamburger" class="ir_pm hamburgerLabel">
+          햄버거버튼
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="sidebar clear">
+          <div class="sidebar_user">
+            <button onclick="location.href='login.html'">로그인</button
+            ><button onclick="location.href='join-agree.html'">회원가입</button>
+          </div>
+          <ul class="mobile_menu_list">
+            <li>
+              <a href="brandstory.html"><span></span>빵덕이네 이야기</a>
+            </li>
+            <li class="hasTwoDepth">
+              <a href="#"><span></span>메뉴</a>
+              <ul class="two_depth">
+                <li><a href="menu-bread.html">빵</a></li>
+                <li><a href="menu-cookie.html">쿠키</a></li>
+                <li><a href="menu-cake.html">케이크</a></li>
+              </ul>
+            </li>
+            <li class="hasTwoDepth">
+              <a href="#"><span></span>이벤트</a>
+              <ul class="two_depth">
+                <li><a href="event.html">진행중 이벤트</a></li>
+                <li><a href="event-end.html">마감된 이벤트</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="recommend.html"><span></span>맞춤추천</a>
+            </li>
+            <li>
+              <a href="#"><span></span>케이크 예약</a>
+              <ul class="two_depth">
+                <li>
+                  <a href="cake-reservation.html">케이크 예약안내</a>
+                </li>
+                <li><a href="cake-form.html">예약폼 작성</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="review.html"><span></span>구매후기</a>
+            </li>
+            <li class="hasTwoDepth">
+              <a href="#"><span></span>고객센터</a>
+              <ul class="two_depth">
+                <li>
+                  <a href="faq.html">자주묻는질문</a>
+                </li>
+                <li>
+                  <a href="customer_center.html">고객의 소리</a>
+                </li>
+                <li>
+                  <a href="board.html">공지사항</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="sidebar_footer">
+            <span class="sidebar_footer_logo"></span>
+            <div class="sidebar_footer_desc">
+              <div class="phone">
+                <h3>문의전화</h3>
+                <div class="phone_number">070-0594-6566</div>
+              </div>
+              <div class="bank">
+                <h3>BANK INFO</h3>
+                <div class="txt">우리은행 | 1002-450-904652</div>
+                <div class="txt">예금주<span>| 주식회사빵덕이네</span></div>
+              </div>
+              <div class="about">
+                <h3>ABOUT US</h3>
+                <div class="txt">㈜ 빵덕</div>
+                <div class="txt">대표 : 김지현</div>
+                <div class="txt">E-mail : wlgus6566@naver.com</div>
+                <div class="txt">
+                  주소: 서울시 동작구 동작대로 29바길 10 빵덕이네
+                </div>
+              </div>
+            </div>
+          </div>
+          <label for="hamburger"></label>
+        </div>
+        <!-- 사이드바 외 영역 -->
+        <label for="hamburger" class="background"></label>
+      </div>
+      <!-- 네비게이션 바 -->
+      <nav>
+        <h1>
+          <a href="../index.html" class="logo ir_pm">빵덕로고</a>
+        </h1>
+        <ul class="nav_left">
+          <li>
+            <a href="login.html" class="login ir_pm">로그인 아이콘</a>
+          </li>
+          <li class="two_depth">
+            <a href="brandstory.html">빵덕이네 이야기</a>
+            <ul>
+              <li><a href="brandstory.html">브랜드스토리</a></li>
+            </ul>
+          </li>
+          <li class="two_depth">
+            <a href="menu-bread.html">메뉴</a>
+            <ul>
+              <li><a href="menu-bread.html">빵</a></li>
+              <li><a href="menu-cookie.html">쿠키</a></li>
+              <li><a href="menu-cake.html">케이크</a></li>
+            </ul>
+          </li>
+          <li class="two_depth">
+            <a href="event.html">이벤트</a>
+            <ul>
+              <li><a href="event.html">진행중 이벤트</a></li>
+              <li><a href="event-end.html">마감된 이벤트</a></li>
+            </ul>
+          </li>
+          <li class="two_depth">
+            <a href="recommend.html">맞춤추천</a>
+            <ul>
+              <li><a href="recommend.html">맞춤추천</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav_right">
+          <li class="two_depth">
+            <a href="cake-reservation.html">케이크 예약</a>
+            <ul>
+              <li><a href="cake-reservation.html">에약안내</a></li>
+              <li><a href="cake-form.html">예약하기</a></li>
+            </ul>
+          </li>
+          <li class="two_depth">
+            <a href="review.html">구매후기</a>
+            <ul>
+              <li><a href="review.html">구매후기</a></li>
+            </ul>
+          </li>
+          <li class="two_depth">
+            <a href="board.html">고객센터</a>
+            <ul>
+              <li><a href="faq.html">자주묻는질문</a></li>
+              <li><a href="customer_center.html">고객의 소리</a></li>
+              <li><a href="board.html">공지사항</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="cart.html" class="shopping" data-cart="4">장바구니</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!--------header-- ---->
+  <a href="#" class="gototop">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+  <!-- gototop버튼 -->
+  <div class="depth_menu">
+    <div class="menu_top">
+      <div class="menu_side">
+        <img src="subimg/menutypo.png" alt="메뉴" />
+        <ul>
+          <li>
+            <a href="menu-bread.html">빵</a>
+          </li>
+          <li>
+            <a href="menu-cookie.html" class="active">쿠키</a>
+          </li>
+          <li>
+            <a href="menu-cake.html">케이크</a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu_bg">
+        <img
+          src="../story/subimg/menu_cookiebanner_bg.jpg"
+          class="zoom"
+          alt="cookiebanner_bg"
+        />
+        <span>COOKIE</span>
+      </div>
+    </div>
+  </div>
+  <div class="breadmenu cookie-cake-menu">
+    <div class="container">
+      <aside class="right_menu">
+        <span>TODAY's</span>
+        <div class="today_slide swiper-container">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <a href="details.html"
+                ><img
+                  src="../story/subimg/detail_big_thumb(1).jpg"
+                  alt="오늘본상품"
+              /></a>
+            </li>
+            <li class="swiper-slide">
+              <a href="details.html"
+                ><img
+                  src="../story/subimg/detail_big_thumb(2).jpg"
+                  alt="오늘본상품2"
+              /></a>
+            </li>
+            <li class="swiper-slide">
+              <a href="details.html"
+                ><img
+                  src="../story/subimg/detail_big_thumb(3).jpg"
+                  alt="오늘본상품3"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="slide_btn clear">
+          <div class="swiper-button-prev today_prev">이전버튼</div>
+          <div class="swiper-button-next today_next">다음버튼</div>
+        </div>
+        <a href="details.html" class="right_basket">
+          <span>장바구니</span>
+        </a>
+        <a href="details.html" class="right_order">
+          <span>주문/배송</span>
+        </a>
+      </aside>
+      <h2>COOKIE</h2>
+      <ul class="opt">
+        <li><a href="#" class="active">신규등록순</a></li>
+        <li><a href="#">판매순</a></li>
+        <li><a href="#">리뷰순</a></li>
+      </ul>
+      <div class="cookie-cake-items">
+        <ul class="items">
+          <li class="item best new sale">
+            <div class="item-img">
+              <a href="details.html"
+                ><img src="subimg/ck-item1.jpg" alt="item1" />
+                <img src="subimg/ck-item1-hover.jpg" alt="item1"
+              /></a>
+              <form action="details.html" class="hover-icon">
+                <button class="like" title="위시리스트 저장">wish list</button>
+                <button class="basket" title="장바구니 담기">장바구니</button>
+              </form>
+            </div>
+            <div class="item-info">
+              <a href="details.html">
+                <div class="item-name">
+                  <h3>말차쿠키</h3>
+                  <div><em class="new">NEW</em><em class="sale">SALE</em></div>
+                </div>
+                <div class="item-info-price">
+                  <strong>1,900원</strong><span>2,500원</span>
+                </div>
+                <div class="item-info-review">
+                  <div class="item-info-review">
+                    <p>
+                      얌핑거 중에 가장 촉촉하고 부들부들한 식감을 가졌어요.
+                      중간에 알갱이가 톡~! 씹히는 재미도 있답니다.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="item best new sale">
+            <div class="item-img">
+              <a href="details.html"
+                ><img src="subimg/ck-item2.jpg" alt="item1" />
+                <img src="subimg/ck-item2-hover.jpg" alt="item1"
+              /></a>
+              <form action="details.html" class="hover-icon">
+                <button class="like" title="위시리스트 저장">wish list</button>
+                <button class="basket" title="장바구니 담기">장바구니</button>
+              </form>
+            </div>
+            <div class="item-info">
+              <a href="details.html">
+                <div class="item-name">
+                  <h3>치즈큐브</h3>
+                  <div><em class="new">NEW</em><em class="sale">SALE</em></div>
+                </div>
+                <div class="item-info-price">
+                  <strong>1,900원</strong><span>2,500원</span>
+                </div>
+                <div class="item-info-review">
+                  <div class="item-info-review">
+                    <p>
+                      얌핑거 중에 가장 촉촉하고 부들부들한 식감을 가졌어요.
+                      중간에 알갱이가 톡~! 씹히는 재미도 있답니다.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="item best new sale">
+            <div class="item-img">
+              <a href="details.html"
+                ><img src="subimg/ck-item3.jpg" alt="item1" />
+                <img src="subimg/ck-item3-hover.jpg" alt="item1"
+              /></a>
+              <form action="details.html" class="hover-icon">
+                <button class="like" title="위시리스트 저장">wish list</button>
+                <button class="basket" title="장바구니 담기">장바구니</button>
+              </form>
+            </div>
+            <div class="item-info">
+              <a href="details.html">
+                <div class="item-name">
+                  <h3>백년초 쿠키</h3>
+                  <div><em class="new">NEW</em><em class="sale">SALE</em></div>
+                </div>
+                <div class="item-info-price">
+                  <strong>1,900원</strong><span>2,500원</span>
+                </div>
+                <div class="item-info-review">
+                  <div class="item-info-review">
+                    <p>
+                      얌핑거 중에 가장 촉촉하고 부들부들한 식감을 가졌어요.
+                      중간에 알갱이가 톡~! 씹히는 재미도 있답니다.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="item best new sale">
+            <div class="item-img">
+              <a href="details.html"
+                ><img src="subimg/ck-item4.jpg" alt="item1" />
+                <img src="subimg/ck-item4-hover.jpg" alt="item1"
+              /></a>
+              <form action="details.html" class="hover-icon">
+                <button class="like" title="위시리스트 저장">wish list</button>
+                <button class="basket" title="장바구니 담기">장바구니</button>
+              </form>
+            </div>
+            <div class="item-info">
+              <a href="details.html">
+                <div class="item-name">
+                  <h3>초코칩 쿠키</h3>
+                  <div><em class="new">NEW</em><em class="sale">SALE</em></div>
+                </div>
+                <div class="item-info-price">
+                  <strong>1,900원</strong><span>2,500원</span>
+                </div>
+                <div class="item-info-review">
+                  <div class="item-info-review">
+                    <p>
+                      얌핑거 중에 가장 촉촉하고 부들부들한 식감을 가졌어요.
+                      중간에 알갱이가 톡~! 씹히는 재미도 있답니다.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="item best new sale">
+            <div class="item-img">
+              <a href="details.html"
+                ><img src="subimg/ck-item5.jpg" alt="item1" />
+                <img src="subimg/ck-item5-hover.jpg" alt="item1"
+              /></a>
+              <form action="details.html" class="hover-icon">
+                <button class="like" title="위시리스트 저장">wish list</button>
+                <button class="basket" title="장바구니 담기">장바구니</button>
+              </form>
+            </div>
+            <div class="item-info">
+              <a href="details.html">
+                <div class="item-name">
+                  <h3>마늘 바질 쿠키</h3>
+                  <div><em class="new">NEW</em><em class="sale">SALE</em></div>
+                </div>
+                <div class="item-info-price">
+                  <strong>1,900원</strong><span>2,500원</span>
+                </div>
+                <div class="item-info-review">
+                  <div class="item-info-review">
+                    <p>
+                      얌핑거 중에 가장 촉촉하고 부들부들한 식감을 가졌어요.
+                      중간에 알갱이가 톡~! 씹히는 재미도 있답니다.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="item best new sale">
+            <div class="item-img">
+              <a href="details.html"
+                ><img src="subimg/ck-item6.jpg" alt="item1" />
+                <img src="subimg/ck-item6-hover.jpg" alt="item1"
+              /></a>
+              <form action="details.html" class="hover-icon">
+                <button class="like" title="위시리스트 저장">wish list</button>
+                <button class="basket" title="장바구니 담기">장바구니</button>
+              </form>
+            </div>
+            <div class="item-info">
+              <a href="details.html">
+                <div class="item-name">
+                  <h3>레몬 마들렌</h3>
+                  <div><em class="new">NEW</em><em class="sale">SALE</em></div>
+                </div>
+                <div class="item-info-price">
+                  <strong>1,900원</strong><span>2,500원</span>
+                </div>
+                <div class="item-info-review">
+                  <div class="item-info-review">
+                    <p>
+                      얌핑거 중에 가장 촉촉하고 부들부들한 식감을 가졌어요.
+                      중간에 알갱이가 톡~! 씹히는 재미도 있답니다.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="item best new sale">
+            <div class="item-img">
+              <a href="details.html"
+                ><img src="subimg/ck-item7.jpg" alt="item1" />
+                <img src="subimg/ck-item7-hover.jpg" alt="item1"
+              /></a>
+              <form action="details.html" class="hover-icon">
+                <button class="like" title="위시리스트 저장">wish list</button>
+                <button class="basket" title="장바구니 담기">장바구니</button>
+              </form>
+            </div>
+            <div class="item-info">
+              <a href="details.html">
+                <div class="item-name">
+                  <h3>마가렛 쿠키</h3>
+                  <div><em class="new">NEW</em><em class="sale">SALE</em></div>
+                </div>
+                <div class="item-info-price">
+                  <strong>1,900원</strong><span>2,500원</span>
+                </div>
+                <div class="item-info-review">
+                  <div class="item-info-review">
+                    <p>
+                      얌핑거 중에 가장 촉촉하고 부들부들한 식감을 가졌어요.
+                      중간에 알갱이가 톡~! 씹히는 재미도 있답니다.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </li>
+        </ul>
+        <ul class="items">
+          <li class="item best new sale">
+            <div class="item-img">
+              <a href="details.html"
+                ><img src="subimg/ck-item5.jpg" alt="item1" />
+                <img src="subimg/ck-item5-hover.jpg" alt="item1"
+              /></a>
+              <form action="details.html" class="hover-icon">
+                <button class="like" title="위시리스트 저장">wish list</button>
+                <button class="basket" title="장바구니 담기">장바구니</button>
+              </form>
+            </div>
+            <div class="item-info">
+              <a href="details.html">
+                <div class="item-name">
+                  <h3>말차쿠키</h3>
+                  <div><em class="new">NEW</em><em class="sale">SALE</em></div>
+                </div>
+                <div class="item-info-price">
+                  <strong>1,900원</strong><span>2,500원</span>
+                </div>
+                <div class="item-info-review">
+                  <div class="item-info-review">
+                    <p>
+                      얌핑거 중에 가장 촉촉하고 부들부들한 식감을 가졌어요.
+                      중간에 알갱이가 톡~! 씹히는 재미도 있답니다.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="item best new sale">
+            <div class="item-img">
+              <a href="details.html"
+                ><img src="subimg/ck-item4.jpg" alt="item1" />
+                <img src="subimg/ck-item4-hover.jpg" alt="item1"
+              /></a>
+              <form action="details.html" class="hover-icon">
+                <button class="like" title="위시리스트 저장">wish list</button>
+                <button class="basket" title="장바구니 담기">장바구니</button>
+              </form>
+            </div>
+            <div class="item-info">
+              <a href="details.html">
+                <div class="item-name">
+                  <h3>치즈큐브</h3>
+                  <div><em class="new">NEW</em><em class="sale">SALE</em></div>
+                </div>
+                <div class="item-info-price">
+                  <strong>1,900원</strong><span>2,500원</span>
+                </div>
+                <div class="item-info-review">
+                  <div class="item-info-review">
+                    <p>
+                      얌핑거 중에 가장 촉촉하고 부들부들한 식감을 가졌어요.
+                      중간에 알갱이가 톡~! 씹히는 재미도 있답니다.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="item best new sale">
+            <div class="item-img">
+              <a href="details.html"
+                ><img src="subimg/ck-item3.jpg" alt="item1" />
+                <img src="subimg/ck-item3-hover.jpg" alt="item1"
+              /></a>
+              <form action="details.html" class="hover-icon">
+                <button class="like" title="위시리스트 저장">wish list</button>
+                <button class="basket" title="장바구니 담기">장바구니</button>
+              </form>
+            </div>
+            <div class="item-info">
+              <a href="details.html">
+                <div class="item-name">
+                  <h3>백년초 쿠키</h3>
+                  <div><em class="new">NEW</em><em class="sale">SALE</em></div>
+                </div>
+                <div class="item-info-price">
+                  <strong>1,900원</strong><span>2,500원</span>
+                </div>
+                <div class="item-info-review">
+                  <div class="item-info-review">
+                    <p>
+                      얌핑거 중에 가장 촉촉하고 부들부들한 식감을 가졌어요.
+                      중간에 알갱이가 톡~! 씹히는 재미도 있답니다.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="item best new sale">
+            <div class="item-img">
+              <a href="details.html"
+                ><img src="subimg/ck-item2.jpg" alt="item1" />
+                <img src="subimg/ck-item2-hover.jpg" alt="item1"
+              /></a>
+              <form action="details.html" class="hover-icon">
+                <button class="like" title="위시리스트 저장">wish list</button>
+                <button class="basket" title="장바구니 담기">장바구니</button>
+              </form>
+            </div>
+            <div class="item-info">
+              <a href="details.html">
+                <div class="item-name">
+                  <h3>초코칩 쿠키</h3>
+                  <div><em class="new">NEW</em><em class="sale">SALE</em></div>
+                </div>
+                <div class="item-info-price">
+                  <strong>1,900원</strong><span>2,500원</span>
+                </div>
+                <div class="item-info-review">
+                  <div class="item-info-review">
+                    <p>
+                      얌핑거 중에 가장 촉촉하고 부들부들한 식감을 가졌어요.
+                      중간에 알갱이가 톡~! 씹히는 재미도 있답니다.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="item best new sale">
+            <div class="item-img">
+              <a href="details.html"
+                ><img src="subimg/ck-item1.jpg" alt="item1" />
+                <img src="subimg/ck-item1-hover.jpg" alt="item1"
+              /></a>
+              <form action="details.html" class="hover-icon">
+                <button class="like" title="위시리스트 저장">wish list</button>
+                <button class="basket" title="장바구니 담기">장바구니</button>
+              </form>
+            </div>
+            <div class="item-info">
+              <a href="details.html">
+                <div class="item-name">
+                  <h3>마늘 바질 쿠키</h3>
+                  <div><em class="new">NEW</em><em class="sale">SALE</em></div>
+                </div>
+                <div class="item-info-price">
+                  <strong>1,900원</strong><span>2,500원</span>
+                </div>
+                <div class="item-info-review">
+                  <div class="item-info-review">
+                    <p>
+                      얌핑거 중에 가장 촉촉하고 부들부들한 식감을 가졌어요.
+                      중간에 알갱이가 톡~! 씹히는 재미도 있답니다.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="item best new sale">
+            <div class="item-img">
+              <a href="details.html"
+                ><img src="subimg/ck-item6.jpg" alt="item1" />
+                <img src="subimg/ck-item6-hover.jpg" alt="item1"
+              /></a>
+              <form action="details.html" class="hover-icon">
+                <button class="like" title="위시리스트 저장">wish list</button>
+                <button class="basket" title="장바구니 담기">장바구니</button>
+              </form>
+            </div>
+            <div class="item-info">
+              <a href="details.html">
+                <div class="item-name">
+                  <h3>레몬 마들렌</h3>
+                  <div><em class="new">NEW</em><em class="sale">SALE</em></div>
+                </div>
+                <div class="item-info-price">
+                  <strong>1,900원</strong><span>2,500원</span>
+                </div>
+                <div class="item-info-review">
+                  <div class="item-info-review">
+                    <p>
+                      얌핑거 중에 가장 촉촉하고 부들부들한 식감을 가졌어요.
+                      중간에 알갱이가 톡~! 씹히는 재미도 있답니다.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="item best new sale">
+            <div class="item-img">
+              <a href="details.html"
+                ><img src="subimg/ck-item7.jpg" alt="item1" />
+                <img src="subimg/ck-item7-hover.jpg" alt="item1"
+              /></a>
+              <form action="details.html" class="hover-icon">
+                <button class="like" title="위시리스트 저장">wish list</button>
+                <button class="basket" title="장바구니 담기">장바구니</button>
+              </form>
+            </div>
+            <div class="item-info">
+              <a href="details.html">
+                <div class="item-name">
+                  <h3>마가렛 쿠키</h3>
+                  <div><em class="new">NEW</em><em class="sale">SALE</em></div>
+                </div>
+                <div class="item-info-price">
+                  <strong>1,900원</strong><span>2,500원</span>
+                </div>
+                <div class="item-info-review">
+                  <div class="item-info-review">
+                    <p>
+                      얌핑거 중에 가장 촉촉하고 부들부들한 식감을 가졌어요.
+                      중간에 알갱이가 톡~! 씹히는 재미도 있답니다.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </li>
+        </ul>
+        <ul class="items">
+          <li class="item best new sale">
+            <div class="item-img">
+              <a href="details.html"
+                ><img src="subimg/ck-item7.jpg" alt="item1" />
+                <img src="subimg/ck-item7-hover.jpg" alt="item1"
+              /></a>
+              <form action="details.html" class="hover-icon">
+                <button class="like" title="위시리스트 저장">wish list</button>
+                <button class="basket" title="장바구니 담기">장바구니</button>
+              </form>
+            </div>
+            <div class="item-info">
+              <a href="details.html">
+                <div class="item-name">
+                  <h3>말차쿠키</h3>
+                  <div><em class="new">NEW</em><em class="sale">SALE</em></div>
+                </div>
+                <div class="item-info-price">
+                  <strong>1,900원</strong><span>2,500원</span>
+                </div>
+                <div class="item-info-review">
+                  <div class="item-info-review">
+                    <p>
+                      얌핑거 중에 가장 촉촉하고 부들부들한 식감을 가졌어요.
+                      중간에 알갱이가 톡~! 씹히는 재미도 있답니다.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="item best new sale">
+            <div class="item-img">
+              <a href="details.html"
+                ><img src="subimg/ck-item6.jpg" alt="item1" />
+                <img src="subimg/ck-item6-hover.jpg" alt="item1"
+              /></a>
+              <form action="details.html" class="hover-icon">
+                <button class="like" title="위시리스트 저장">wish list</button>
+                <button class="basket" title="장바구니 담기">장바구니</button>
+              </form>
+            </div>
+            <div class="item-info">
+              <a href="details.html">
+                <div class="item-name">
+                  <h3>치즈큐브</h3>
+                  <div><em class="new">NEW</em><em class="sale">SALE</em></div>
+                </div>
+                <div class="item-info-price">
+                  <strong>1,900원</strong><span>2,500원</span>
+                </div>
+                <div class="item-info-review">
+                  <div class="item-info-review">
+                    <p>
+                      얌핑거 중에 가장 촉촉하고 부들부들한 식감을 가졌어요.
+                      중간에 알갱이가 톡~! 씹히는 재미도 있답니다.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="item best new sale">
+            <div class="item-img">
+              <a href="details.html"
+                ><img src="subimg/ck-item5.jpg" alt="item1" />
+                <img src="subimg/ck-item5-hover.jpg" alt="item1"
+              /></a>
+              <form action="details.html" class="hover-icon">
+                <button class="like" title="위시리스트 저장">wish list</button>
+                <button class="basket" title="장바구니 담기">장바구니</button>
+              </form>
+            </div>
+            <div class="item-info">
+              <a href="details.html">
+                <div class="item-name">
+                  <h3>백년초 쿠키</h3>
+                  <div><em class="new">NEW</em><em class="sale">SALE</em></div>
+                </div>
+                <div class="item-info-price">
+                  <strong>1,900원</strong><span>2,500원</span>
+                </div>
+                <div class="item-info-review">
+                  <div class="item-info-review">
+                    <p>
+                      얌핑거 중에 가장 촉촉하고 부들부들한 식감을 가졌어요.
+                      중간에 알갱이가 톡~! 씹히는 재미도 있답니다.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="item best new sale">
+            <div class="item-img">
+              <a href="details.html"
+                ><img src="subimg/ck-item4.jpg" alt="item1" />
+                <img src="subimg/ck-item4-hover.jpg" alt="item1"
+              /></a>
+              <form action="details.html" class="hover-icon">
+                <button class="like" title="위시리스트 저장">wish list</button>
+                <button class="basket" title="장바구니 담기">장바구니</button>
+              </form>
+            </div>
+            <div class="item-info">
+              <a href="details.html">
+                <div class="item-name">
+                  <h3>초코칩 쿠키</h3>
+                  <div><em class="new">NEW</em><em class="sale">SALE</em></div>
+                </div>
+                <div class="item-info-price">
+                  <strong>1,900원</strong><span>2,500원</span>
+                </div>
+                <div class="item-info-review">
+                  <div class="item-info-review">
+                    <p>
+                      얌핑거 중에 가장 촉촉하고 부들부들한 식감을 가졌어요.
+                      중간에 알갱이가 톡~! 씹히는 재미도 있답니다.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="item best new sale">
+            <div class="item-img">
+              <a href="details.html"
+                ><img src="subimg/ck-item3.jpg" alt="item1" />
+                <img src="subimg/ck-item3-hover.jpg" alt="item1"
+              /></a>
+              <form action="details.html" class="hover-icon">
+                <button class="like" title="위시리스트 저장">wish list</button>
+                <button class="basket" title="장바구니 담기">장바구니</button>
+              </form>
+            </div>
+            <div class="item-info">
+              <a href="details.html">
+                <div class="item-name">
+                  <h3>마늘 바질 쿠키</h3>
+                  <div><em class="new">NEW</em><em class="sale">SALE</em></div>
+                </div>
+                <div class="item-info-price">
+                  <strong>1,900원</strong><span>2,500원</span>
+                </div>
+                <div class="item-info-review">
+                  <div class="item-info-review">
+                    <p>
+                      얌핑거 중에 가장 촉촉하고 부들부들한 식감을 가졌어요.
+                      중간에 알갱이가 톡~! 씹히는 재미도 있답니다.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="item best new sale">
+            <div class="item-img">
+              <a href="details.html"
+                ><img src="subimg/ck-item2.jpg" alt="item1" />
+                <img src="subimg/ck-item2-hover.jpg" alt="item1"
+              /></a>
+              <form action="details.html" class="hover-icon">
+                <button class="like" title="위시리스트 저장">wish list</button>
+                <button class="basket" title="장바구니 담기">장바구니</button>
+              </form>
+            </div>
+            <div class="item-info">
+              <a href="details.html">
+                <div class="item-name">
+                  <h3>레몬 마들렌</h3>
+                  <div><em class="new">NEW</em><em class="sale">SALE</em></div>
+                </div>
+                <div class="item-info-price">
+                  <strong>1,900원</strong><span>2,500원</span>
+                </div>
+                <div class="item-info-review">
+                  <div class="item-info-review">
+                    <p>
+                      얌핑거 중에 가장 촉촉하고 부들부들한 식감을 가졌어요.
+                      중간에 알갱이가 톡~! 씹히는 재미도 있답니다.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="item best new sale">
+            <div class="item-img">
+              <a href="details.html"
+                ><img src="subimg/ck-item1.jpg" alt="item1" />
+                <img src="subimg/ck-item1-hover.jpg" alt="item1"
+              /></a>
+              <form action="details.html" class="hover-icon">
+                <button class="like" title="위시리스트 저장">wish list</button>
+                <button class="basket" title="장바구니 담기">장바구니</button>
+              </form>
+            </div>
+            <div class="item-info">
+              <a href="details.html">
+                <div class="item-name">
+                  <h3>마가렛 쿠키</h3>
+                  <div><em class="new">NEW</em><em class="sale">SALE</em></div>
+                </div>
+                <div class="item-info-price">
+                  <strong>1,900원</strong><span>2,500원</span>
+                </div>
+                <div class="item-info-review">
+                  <div class="item-info-review">
+                    <p>
+                      얌핑거 중에 가장 촉촉하고 부들부들한 식감을 가졌어요.
+                      중간에 알갱이가 톡~! 씹히는 재미도 있답니다.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <img src="../assets/img/footer_logo.png" alt="푸터빵덕로고" />
+      <div class="footer clear">
+        <div class="footer_left">
+          <div class="phone">
+            <h3>문의전화</h3>
+            <p>070-0594-6566</p>
+          </div>
+          <div class="shop_menu">
+            <h3>SHOP MENU</h3>
+            <a href="faq.html" class="txt"
+              >자주묻는질문<span class="bar"></span
+            ></a>
+            <a href="board.html" class="txt"
+              >공지사항<span class="bar"></span
+            ></a>
+            <a href="customer_center.html" class="txt">고객의소리</a
+            ><br /><br />
+            <p class="txt">통신판매업신고 : 제 2020-서울강남-00096호</p>
+            <p class="txt">사업자 등록번호 : 211-87-844424</p>
+            <br />
+            <p>
+              <a href="join-agree.html" class="txt"><b>개인정보처리방침</b></a>
+            </p>
+          </div>
+        </div>
+        <div class="footer_center">
+          <div class="bank">
+            <h3>BANK INFO</h3>
+            <p class="txt">우리은행<span class="bar"></span>1002-450-904652</p>
+            <p class="txt">예금주<span class="bar"></span>주식회사빵덕이네</p>
+          </div>
+          <div class="order_tracking">
+            <h3>ORDER TRACKING</h3>
+            <p class="txt">우체국택배(TEL:1588-4040)</p>
+            <p class="txt tracking">
+              (배송정보는 해당 택배사를 통해 조회가 가능하십니다.)
+            </p>
+          </div>
+        </div>
+        <div class="footer_right">
+          <div class="place">
+            <h3>위치</h3>
+            <p>서울시 동작구 동작대로 28바길 10</p>
+          </div>
+          <div class="sns">
+            <h3>SNS</h3>
+            <p>
+              <a href="details.html" title="facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="" title="instagram"><i class="fab fa-instagram"></i></a>
+              <a href="details.html" title="twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </p>
+          </div>
+          <div class="copyright">
+            <p>COPYRIGHT © 2020 BBANGDUCK<br />ALL RIGHTS RESERVED.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
